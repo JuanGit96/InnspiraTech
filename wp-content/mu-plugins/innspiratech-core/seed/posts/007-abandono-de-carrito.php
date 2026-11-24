@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'abandono-de-carrito',
 	'title'      => 'Abandono de carrito: 15 mejoras para vender más en tu tienda online',
-	'date'       => '2026-07-27 09:00:00',
+	'date'       => '2026-12-07 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'Conversión', 'Checkout', 'Ventas online' ],
 	'servicio'   => 'desarrollo-ecommerce',

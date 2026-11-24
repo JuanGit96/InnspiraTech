@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'cuanto-cuesta-una-pagina-web',
 	'title'      => '¿Cuánto cuesta una página web para empresas en 2026? Guía de precios y factores',
-	'date'       => '2026-08-24 09:00:00',
+	'date'       => '2027-01-08 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Páginas web', 'WordPress', 'Presupuesto', 'Pymes' ],
 	'servicio'   => 'desarrollo-web-mvp',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'n8n-vs-make-vs-zapier',
 	'title'      => 'n8n vs Make vs Zapier: qué herramienta elegir para automatizar procesos en tu empresa',
-	'date'       => '2026-07-24 09:00:00',
+	'date'       => '2026-12-04 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'n8n', 'Make', 'Zapier', 'No-code' ],
 	'servicio'   => 'automatizacion-procesos',

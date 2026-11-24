@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'documentacion-tecnica-de-software',
 	'title'      => 'Documentación técnica: qué debes exigirle a tu proveedor de software',
-	'date'       => '2026-10-19 09:00:00',
+	'date'       => '2027-02-03 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Documentación técnica', 'Proveedores', 'Contratos de software', 'Gestión de proyectos' ],
 	'servicio'   => 'desarrollo-software-a-medida',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'pasarelas-de-pago-colombia',
 	'title'      => 'Pasarelas de pago en Colombia: cómo elegir la mejor para tu tienda',
-	'date'       => '2026-12-07 09:00:00',
+	'date'       => '2027-03-24 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'Pasarelas de pago', 'E-commerce', 'PSE', 'Colombia' ],
 	'servicio'   => 'desarrollo-ecommerce',

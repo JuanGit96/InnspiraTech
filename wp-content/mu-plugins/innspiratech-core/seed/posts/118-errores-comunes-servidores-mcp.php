@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'errores-comunes-servidores-mcp',
 	'title'      => 'Errores comunes al construir servidores MCP',
-	'date'       => '2027-05-17 09:00:00',
+	'date'       => '2027-08-27 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Buenas prácticas', 'Arquitectura', 'Agentes de IA' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-elegir-stack-tecnologico',
 	'title'      => 'Cómo elegir el stack tecnológico de tu producto digital',
-	'date'       => '2027-02-08 09:00:00',
+	'date'       => '2027-05-21 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Stack tecnológico', 'Arquitectura', 'Decisiones técnicas', 'Producto' ],
 	'servicio'   => 'consultoria-tecnologica',

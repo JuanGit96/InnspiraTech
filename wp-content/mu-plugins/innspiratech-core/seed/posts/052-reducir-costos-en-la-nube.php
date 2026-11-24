@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'reducir-costos-en-la-nube',
 	'title'      => 'Cómo reducir costos en la nube sin afectar el servicio',
-	'date'       => '2026-12-09 09:00:00',
+	'date'       => '2027-03-26 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Cloud', 'Costos', 'Infraestructura', 'FinOps' ],
 	'servicio'   => 'consultoria-tecnologica',

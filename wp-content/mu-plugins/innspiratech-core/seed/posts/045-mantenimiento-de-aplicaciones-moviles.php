@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'mantenimiento-de-aplicaciones-moviles',
 	'title'      => 'Mantenimiento de apps móviles: qué hacer cada año con iOS y Android',
-	'date'       => '2026-11-23 09:00:00',
+	'date'       => '2027-03-10 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Mantenimiento', 'App Store', 'Google Play' ],
 	'servicio'   => 'desarrollo-apps-moviles',

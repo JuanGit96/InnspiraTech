@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'sitio-web-multiidioma',
 	'title'      => 'Sitio web multiidioma: cuándo conviene y cómo implementarlo sin dañar el SEO',
-	'date'       => '2026-12-30 09:00:00',
+	'date'       => '2027-04-14 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Multiidioma', 'SEO internacional', 'WordPress', 'Sitios web' ],
 	'servicio'   => 'desarrollo-web-mvp',

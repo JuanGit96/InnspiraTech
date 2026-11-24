@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'empresa-lista-para-la-ia',
 	'title'      => 'Cómo saber si tu empresa está lista para la inteligencia artificial',
-	'date'       => '2027-05-21 09:00:00',
+	'date'       => '2027-09-01 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Inteligencia artificial', 'Diagnóstico', 'Estrategia', 'Datos' ],
 	'servicio'   => 'consultoria-tecnologica',

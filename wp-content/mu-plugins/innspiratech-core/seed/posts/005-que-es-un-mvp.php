@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'que-es-un-mvp',
 	'title'      => 'Qué es un MVP y cómo validar tu idea de negocio antes de invertir',
-	'date'       => '2026-07-20 09:00:00',
+	'date'       => '2026-11-30 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'MVP', 'Startups', 'Validación', 'Producto digital' ],
 	'servicio'   => 'desarrollo-web-mvp',

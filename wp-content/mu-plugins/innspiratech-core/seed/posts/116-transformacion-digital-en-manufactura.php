@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'transformacion-digital-en-manufactura',
 	'title'      => 'Transformación digital en manufactura: por dónde empezar',
-	'date'       => '2027-05-12 09:00:00',
+	'date'       => '2027-08-23 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Manufactura', 'Industria', 'Transformación digital', 'Producción' ],
 	'servicio'   => 'transformacion-digital-empresas',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'rediseno-web-sin-perder-seo',
 	'title'      => 'Rediseño de sitio web sin perder posicionamiento: guía paso a paso',
-	'date'       => '2026-10-05 09:00:00',
+	'date'       => '2027-01-20 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Rediseño web', 'SEO técnico', 'Redirecciones 301', 'Migración web' ],
 	'servicio'   => 'desarrollo-web-mvp',

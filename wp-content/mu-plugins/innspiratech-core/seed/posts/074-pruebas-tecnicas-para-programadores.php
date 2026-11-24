@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'pruebas-tecnicas-para-programadores',
 	'title'      => 'Pruebas técnicas para programadores: cómo diseñarlas para que sean justas y útiles',
-	'date'       => '2027-02-03 09:00:00',
+	'date'       => '2027-05-17 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Contratación', 'Pruebas técnicas', 'Entrevistas', 'Talento TI' ],
 	'servicio'   => 'staff-augmentation',

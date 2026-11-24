@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'human-in-the-loop-ia',
 	'title'      => 'Humano en el ciclo: cuándo debe intervenir una persona en un proceso con IA',
-	'date'       => '2027-03-29 09:00:00',
+	'date'       => '2027-07-09 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Gobierno de IA', 'Procesos', 'Riesgos' ],
 	'servicio'   => 'agentes-ia-empresas',

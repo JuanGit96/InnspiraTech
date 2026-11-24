@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'chatbot-vs-agente-de-ia',
 	'title'      => 'Chatbot o agente de IA: diferencias y cuándo usar cada uno',
-	'date'       => '2027-01-04 09:00:00',
+	'date'       => '2027-04-16 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Chatbot', 'Agentes de IA', 'Atención al cliente', 'Automatización' ],
 	'servicio'   => 'agentes-ia-empresas',

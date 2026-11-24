@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'preparar-tienda-online-temporadas-alto-trafico',
 	'title'      => 'Cómo preparar tu tienda online para Black Friday y temporadas de alto tráfico',
-	'date'       => '2026-10-12 09:00:00',
+	'date'       => '2027-01-27 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'Black Friday', 'Rendimiento web', 'Temporada alta' ],
 	'servicio'   => 'desarrollo-ecommerce',

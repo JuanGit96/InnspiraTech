@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'optimizar-base-de-datos-lenta',
 	'title'      => 'Base de datos lenta: primeros pasos para optimizarla',
-	'date'       => '2027-05-19 09:00:00',
+	'date'       => '2027-08-30 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Base de datos', 'Rendimiento', 'Mantenimiento', 'Optimización' ],
 	'servicio'   => 'mantenimiento-software',

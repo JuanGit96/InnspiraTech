@@ -37,7 +37,7 @@ while ( have_posts() ) :
 					<h1 class="mt-5 text-4xl leading-tight font-extrabold tracking-tight text-indark sm:text-5xl"><?php the_title(); ?></h1>
 
 					<?php if ( has_excerpt() ) : ?>
-						<p class="mt-5 text-xl leading-relaxed text-slate-600"><?php echo esc_html( get_the_excerpt() ); ?></p>
+						<p class="it-speakable mt-5 text-xl leading-relaxed text-slate-600"><?php echo esc_html( get_the_excerpt() ); ?></p>
 					<?php endif; ?>
 
 					<div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-slate-100 pt-6 text-sm text-slate-500">

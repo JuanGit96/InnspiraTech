@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'politica-de-uso-de-ia',
 	'title'      => 'Política de uso de IA en la empresa: qué debe incluir (con estructura base)',
-	'date'       => '2027-04-05 09:00:00',
+	'date'       => '2027-07-16 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Gobierno de IA', 'Políticas', 'Seguridad', 'Cumplimiento' ],
 	'servicio'   => 'consultoria-tecnologica',

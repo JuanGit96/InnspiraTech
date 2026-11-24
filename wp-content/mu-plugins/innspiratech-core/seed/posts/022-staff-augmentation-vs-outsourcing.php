@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'staff-augmentation-vs-outsourcing',
 	'title'      => 'Staff augmentation vs outsourcing vs contratación directa: qué modelo le conviene a tu empresa',
-	'date'       => '2026-08-14 09:00:00',
+	'date'       => '2026-12-28 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Staff augmentation', 'Outsourcing', 'Talento TI', 'Equipos remotos' ],
 	'servicio'   => 'staff-augmentation',

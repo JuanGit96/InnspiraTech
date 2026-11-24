@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'senales-software-no-escala',
 	'title'      => '8 señales de que tu software ya no soporta el crecimiento de tu empresa',
-	'date'       => '2026-11-16 09:00:00',
+	'date'       => '2027-03-03 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Escalabilidad', 'Arquitectura', 'Deuda técnica', 'Crecimiento' ],
 	'servicio'   => 'desarrollo-software-a-medida',

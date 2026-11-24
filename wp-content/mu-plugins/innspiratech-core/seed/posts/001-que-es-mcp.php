@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'que-es-mcp-model-context-protocol',
 	'title'      => '¿Qué es MCP (Model Context Protocol) y cómo puede tu empresa monetizarlo?',
-	'date'       => '2026-09-09 09:00:00',
+	'date'       => '2027-01-15 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Model Context Protocol', 'Agentes de IA', 'Modelos de negocio' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

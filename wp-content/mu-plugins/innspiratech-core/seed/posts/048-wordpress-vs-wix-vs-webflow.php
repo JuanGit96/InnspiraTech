@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'wordpress-vs-wix-vs-webflow',
 	'title'      => 'WordPress, Wix o Webflow: cuál elegir para el sitio de tu empresa',
-	'date'       => '2026-11-30 09:00:00',
+	'date'       => '2027-03-17 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'WordPress', 'Wix', 'Webflow', 'Sitios web' ],
 	'servicio'   => 'desarrollo-web-mvp',

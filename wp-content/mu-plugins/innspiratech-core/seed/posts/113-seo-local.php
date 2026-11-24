@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'seo-local',
 	'title'      => 'SEO local: cómo aparecer en el mapa y en las búsquedas de tu ciudad',
-	'date'       => '2027-05-05 09:00:00',
+	'date'       => '2027-08-16 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'SEO local', 'Google Business Profile', 'Marketing digital', 'Reseñas' ],
 	'servicio'   => 'marketing-digital',

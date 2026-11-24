@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'woocommerce-vs-shopify-vs-magento-vs-vtex',
 	'title'      => 'WooCommerce vs Shopify vs Magento vs VTEX: qué plataforma de e-commerce elegir',
-	'date'       => '2026-08-17 09:00:00',
+	'date'       => '2026-12-30 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'WooCommerce', 'Shopify', 'Magento', 'VTEX' ],
 	'servicio'   => 'desarrollo-ecommerce',

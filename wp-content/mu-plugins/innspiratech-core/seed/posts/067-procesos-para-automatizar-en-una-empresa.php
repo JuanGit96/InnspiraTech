@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'procesos-para-automatizar-en-una-empresa',
 	'title'      => '10 procesos que toda pyme debería automatizar este año',
-	'date'       => '2027-01-18 09:00:00',
+	'date'       => '2027-04-30 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'Procesos', 'Productividad', 'Pymes' ],
 	'servicio'   => 'automatizacion-procesos',

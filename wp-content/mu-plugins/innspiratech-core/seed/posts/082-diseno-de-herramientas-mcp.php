@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'diseno-de-herramientas-mcp',
 	'title'      => 'Cómo diseñar buenas herramientas MCP para que la IA las use bien',
-	'date'       => '2027-02-22 09:00:00',
+	'date'       => '2027-06-04 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Diseño de API', 'Agentes de IA', 'Buenas prácticas' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

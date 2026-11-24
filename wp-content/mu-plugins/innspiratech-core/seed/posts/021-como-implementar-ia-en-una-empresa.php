@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-implementar-inteligencia-artificial-en-una-empresa',
 	'title'      => 'Cómo implementar inteligencia artificial en una empresa sin fracasar: guía para líderes',
-	'date'       => '2026-08-19 09:00:00',
+	'date'       => '2027-01-04 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Inteligencia artificial', 'Estrategia', 'Gobierno de IA', 'Transformación digital' ],
 	'servicio'   => 'consultoria-tecnologica',

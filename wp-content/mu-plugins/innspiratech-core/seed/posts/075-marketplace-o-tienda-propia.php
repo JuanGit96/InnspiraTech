@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'marketplace-o-tienda-propia',
 	'title'      => '¿Vender en marketplace o en tienda propia? Qué le conviene a tu marca',
-	'date'       => '2027-02-05 09:00:00',
+	'date'       => '2027-05-19 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'Marketplace', 'Estrategia', 'Ventas' ],
 	'servicio'   => 'desarrollo-ecommerce',

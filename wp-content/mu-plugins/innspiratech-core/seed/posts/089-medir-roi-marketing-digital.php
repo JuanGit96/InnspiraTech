@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'medir-roi-marketing-digital',
 	'title'      => 'Cómo medir el retorno de tu marketing digital con GA4 y tu CRM',
-	'date'       => '2027-03-10 09:00:00',
+	'date'       => '2027-06-21 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Analítica', 'GA4', 'CRM', 'ROI' ],
 	'servicio'   => 'marketing-digital',

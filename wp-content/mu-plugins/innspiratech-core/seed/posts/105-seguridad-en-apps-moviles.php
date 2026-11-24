@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'seguridad-en-apps-moviles',
 	'title'      => 'Seguridad en apps móviles: lo mínimo que debes exigir',
-	'date'       => '2027-04-16 09:00:00',
+	'date'       => '2027-07-28 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Seguridad', 'Datos personales', 'Buenas prácticas' ],
 	'servicio'   => 'desarrollo-apps-moviles',

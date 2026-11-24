@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-elegir-empresa-desarrollo-software',
 	'title'      => 'Cómo elegir una empresa de desarrollo de software: 12 preguntas antes de firmar',
-	'date'       => '2026-07-13 09:00:00',
+	'date'       => '2026-11-23 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Proveedores', 'Desarrollo de software', 'Contratos', 'Outsourcing' ],
 	'servicio'   => 'desarrollo-software-a-medida',

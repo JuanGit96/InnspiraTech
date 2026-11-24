@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'publicar-servidor-mcp',
 	'title'      => 'Cómo publicar y distribuir tu servidor MCP',
-	'date'       => '2027-03-22 09:00:00',
+	'date'       => '2027-07-02 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Distribución', 'Producto', 'Documentación' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

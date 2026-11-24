@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'app-para-fuerza-de-ventas',
 	'title'      => 'App para fuerza de ventas en campo: qué debe incluir y cómo implementarla',
-	'date'       => '2026-10-26 09:00:00',
+	'date'       => '2027-02-10 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Fuerza de ventas', 'Operación en campo', 'Integraciones' ],
 	'servicio'   => 'desarrollo-apps-moviles',

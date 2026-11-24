@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'copias-de-seguridad-web',
 	'title'      => 'Copias de seguridad: cómo aplicar la regla 3-2-1 en tu empresa',
-	'date'       => '2027-03-24 09:00:00',
+	'date'       => '2027-07-05 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Copias de seguridad', 'Continuidad', 'Seguridad', 'Mantenimiento' ],
 	'servicio'   => 'mantenimiento-software',

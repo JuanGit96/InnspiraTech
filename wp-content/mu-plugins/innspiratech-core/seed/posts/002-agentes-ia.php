@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'agentes-de-ia-para-empresas',
 	'title'      => 'Agentes de IA para empresas: guía práctica para pymes y grandes compañías',
-	'date'       => '2026-09-02 09:00:00',
+	'date'       => '2027-01-13 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Automatización', 'Atención al cliente', 'IA generativa' ],
 	'servicio'   => 'agentes-ia-empresas',

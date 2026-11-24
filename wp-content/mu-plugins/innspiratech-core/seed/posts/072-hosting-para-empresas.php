@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'hosting-para-empresas',
 	'title'      => 'Hosting para empresas: cómo elegirlo y cuánto cuesta',
-	'date'       => '2027-01-29 09:00:00',
+	'date'       => '2027-05-12 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Hosting', 'Infraestructura', 'Rendimiento', 'Sitios web' ],
 	'servicio'   => 'desarrollo-web-mvp',

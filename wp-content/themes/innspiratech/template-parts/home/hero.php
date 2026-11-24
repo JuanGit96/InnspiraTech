@@ -8,7 +8,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-$it_points = array( 'Pymes, medianas y grandes empresas', 'Servidores MCP y agentes de IA', 'Código limpio, documentado y escalable', 'Soporte y evolución continua' );
+$it_points = array( 'Acordamos el indicador que vamos a mejorar', 'Pymes, medianas y grandes empresas', 'Servidores MCP y agentes de IA', 'Código limpio, documentado y escalable', 'Soporte y evolución continua' );
 ?>
 <section class="relative isolate overflow-hidden bg-white pt-32 pb-20 lg:pt-44 lg:pb-28">
 	<div aria-hidden="true" class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(37,99,235,0.10),transparent_55%)]"></div>
@@ -30,7 +30,7 @@ $it_points = array( 'Pymes, medianas y grandes empresas', 'Servidores MCP y agen
 					<span class="block text-inblue"><?php echo esc_html( it_opt( 'hero_line2' ) ); ?></span>
 				</h1>
 
-				<p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 sm:text-xl"><?php echo esc_html( it_opt( 'hero_text' ) ); ?></p>
+				<p class="it-speakable mt-6 max-w-xl text-lg leading-relaxed text-slate-600 sm:text-xl"><?php echo esc_html( it_opt( 'hero_text' ) ); ?></p>
 
 				<div class="mt-9 flex flex-col gap-4 sm:flex-row">
 					<a href="<?php echo esc_url( it_contact_url() ); ?>" class="btn-primary btn-lg">

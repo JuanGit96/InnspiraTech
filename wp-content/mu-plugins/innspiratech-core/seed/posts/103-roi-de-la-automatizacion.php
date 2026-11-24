@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'roi-de-la-automatizacion',
 	'title'      => 'Cómo medir el retorno de una automatización antes y después de hacerla',
-	'date'       => '2027-04-12 09:00:00',
+	'date'       => '2027-07-23 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'ROI', 'Procesos', 'Indicadores' ],
 	'servicio'   => 'automatizacion-procesos',

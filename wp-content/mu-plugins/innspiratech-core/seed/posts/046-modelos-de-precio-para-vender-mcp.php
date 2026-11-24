@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'modelos-de-precio-para-vender-mcp',
 	'title'      => 'Cómo vender tu servidor MCP: modelos de precio y de negocio',
-	'date'       => '2026-11-25 09:00:00',
+	'date'       => '2027-03-12 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Modelos de negocio', 'Precios', 'Producto' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

@@ -54,6 +54,12 @@ return [
 			'icono'         => 'plug',
 			'tipo_servicio' => 'Desarrollo de servidores MCP (Model Context Protocol)',
 			'cta'           => 'Cotizar mi servidor MCP',
+			'kpis'          => [
+				'Minutos para obtener una respuesta de tus sistemas',
+				'Integraciones que ya no hay que construir una por una',
+				'Consultas atendidas sin pasar por el área de sistemas',
+				'Ingresos nuevos si vendes el acceso a tus datos',
+			],
 			'beneficios'    => [
 				[ 'Una integración, muchos asistentes', 'Construyes la conexión una vez y funciona con cualquier cliente compatible con MCP.' ],
 				[ 'Seguridad desde el diseño', 'Autenticación, permisos por rol, validación de datos y registro de cada acción de la IA.' ],
@@ -118,6 +124,12 @@ return [
 			'icono'         => 'sparkles',
 			'tipo_servicio' => 'Desarrollo de agentes de inteligencia artificial',
 			'cta'           => 'Diseñar mi agente de IA',
+			'kpis'          => [
+				'Tiempo de primera respuesta al cliente',
+				'Conversaciones resueltas sin intervención humana',
+				'Satisfacción del cliente al cerrar',
+				'Costo por conversación atendida',
+			],
 			'beneficios'    => [
 				[ 'Respuesta inmediata', 'Tus clientes reciben atención al instante, a cualquier hora y en su canal preferido.' ],
 				[ 'Equipos enfocados', 'Las tareas repetitivas pasan al agente y tu equipo se concentra en lo que genera valor.' ],
@@ -172,6 +184,12 @@ return [
 			'icono'         => 'trending-up',
 			'tipo_servicio' => 'Consultoría de transformación digital',
 			'cta'           => 'Iniciar mi diagnóstico',
+			'kpis'          => [
+				'Procesos críticos que salen de las hojas de cálculo',
+				'Días que tarda el cierre del mes',
+				'Tiempo desde que se pide algo hasta que está disponible',
+				'Decisiones tomadas con datos del día, no del mes pasado',
+			],
 			'beneficios'    => [
 				[ 'Prioridades claras', 'Una hoja de ruta ordenada por impacto y esfuerzo, no por modas tecnológicas.' ],
 				[ 'Operación más eficiente', 'Menos tareas manuales, menos errores y procesos más rápidos.' ],
@@ -226,6 +244,12 @@ return [
 			'icono'         => 'megaphone',
 			'tipo_servicio' => 'Marketing digital',
 			'cta'           => 'Impulsar mis ventas',
+			'kpis'          => [
+				'Leads calificados al mes',
+				'Costo de adquirir un cliente nuevo',
+				'Posiciones en Google en las búsquedas que venden',
+				'Ingresos atribuidos al canal digital',
+			],
 			'beneficios'    => [
 				[ 'Más clientes potenciales calificados', 'Atraemos a quien tiene intención real de compra, no solo tráfico.' ],
 				[ 'Inversión medible', 'Sabes cuánto cuesta cada lead y cada venta, y en qué canal rinde más tu presupuesto.' ],
@@ -280,6 +304,12 @@ return [
 			'icono'         => 'refresh',
 			'tipo_servicio' => 'Automatización de procesos empresariales',
 			'cta'           => 'Automatizar mi negocio',
+			'kpis'          => [
+				'Horas administrativas liberadas al mes',
+				'Días que tarda el recaudo de cartera',
+				'Errores de digitación',
+				'Porcentaje del proceso que corre sin intervención',
+			],
 			'beneficios'    => [
 				[ 'Ahorro de horas de trabajo', 'Las tareas repetitivas se ejecutan solas, sin errores de digitación.' ],
 				[ 'Respuesta más rápida', 'Clientes y prospectos reciben atención y seguimiento al instante.' ],
@@ -331,6 +361,12 @@ return [
 			'icono'         => 'light-bulb',
 			'tipo_servicio' => 'Consultoría tecnológica',
 			'cta'           => 'Agendar consultoría',
+			'kpis'          => [
+				'Costo mensual de infraestructura y licencias',
+				'Riesgos críticos abiertos',
+				'Tiempo desde la idea hasta producción',
+				'Cumplimiento de la hoja de ruta trimestral',
+			],
 			'beneficios'    => [
 				[ 'Criterio independiente', 'Recomendaciones basadas en tu contexto, no en comisiones de proveedores.' ],
 				[ 'Menos riesgo', 'Detectamos problemas de arquitectura y seguridad antes de que sean costosos.' ],
@@ -386,6 +422,12 @@ return [
 			'icono'         => 'users',
 			'tipo_servicio' => 'Staff augmentation y reclutamiento TI',
 			'cta'           => 'Solicitar talento TI',
+			'kpis'          => [
+				'Días para incorporar un perfil al equipo',
+				'Entregas completadas por ciclo',
+				'Rotación del equipo asignado',
+				'Costo real por hora productiva',
+			],
 			'beneficios'    => [
 				[ 'Validación técnica real', 'Evaluamos habilidades con pruebas y entrevistas técnicas, no solo con la hoja de vida.' ],
 				[ 'Agilidad', 'Presentamos perfiles alineados a tu stack sin que tu equipo cargue con todo el proceso.' ],

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'retencion-de-talento-ti',
 	'title'      => 'Retención de talento TI: qué valoran realmente los desarrolladores',
-	'date'       => '2027-03-03 09:00:00',
+	'date'       => '2027-06-14 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Retención', 'Cultura', 'Talento TI', 'Liderazgo' ],
 	'servicio'   => 'staff-augmentation',

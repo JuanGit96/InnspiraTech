@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'arquitectura-de-software-escalable',
 	'title'      => 'Arquitectura de software para empresas que quieren escalar',
-	'date'       => '2027-03-12 09:00:00',
+	'date'       => '2027-06-23 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Arquitectura', 'Escalabilidad', 'Rendimiento', 'Infraestructura' ],
 	'servicio'   => 'desarrollo-software-a-medida',

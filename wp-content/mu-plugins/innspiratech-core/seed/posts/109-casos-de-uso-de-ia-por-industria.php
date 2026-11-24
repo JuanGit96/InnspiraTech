@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'casos-de-uso-de-ia-por-industria',
 	'title'      => 'Casos de uso de IA por industria: retail, salud, logística, manufactura y servicios',
-	'date'       => '2027-04-26 09:00:00',
+	'date'       => '2027-08-06 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Inteligencia artificial', 'Casos de uso', 'Industrias', 'Agentes de IA' ],
 	'servicio'   => 'agentes-ia-empresas',

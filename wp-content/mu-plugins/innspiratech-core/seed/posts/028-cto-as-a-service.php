@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'cto-as-a-service',
 	'title'      => 'CTO as a Service: qué es, qué hace y cuándo lo necesita tu empresa',
-	'date'       => '2026-10-14 09:00:00',
+	'date'       => '2027-01-29 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'CTO as a Service', 'Consultoría tecnológica', 'Liderazgo técnico', 'Estrategia' ],
 	'servicio'   => 'consultoria-tecnologica',

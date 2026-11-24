@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'digitalizar-operacion-en-campo',
 	'title'      => 'Cómo digitalizar la operación en campo: del papel y WhatsApp a una app',
-	'date'       => '2026-12-18 09:00:00',
+	'date'       => '2027-04-05 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Operación en campo', 'Transformación digital', 'Apps', 'Procesos' ],
 	'servicio'   => 'transformacion-digital-empresas',

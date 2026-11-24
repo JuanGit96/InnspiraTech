@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'publicar-app-en-app-store-y-google-play',
 	'title'      => 'Cómo publicar una app en App Store y Google Play sin rechazos',
-	'date'       => '2027-01-22 09:00:00',
+	'date'       => '2027-05-05 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'App Store', 'Google Play', 'Publicación' ],
 	'servicio'   => 'desarrollo-apps-moviles',

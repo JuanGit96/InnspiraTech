@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-contratar-desarrolladores-de-software',
 	'title'      => 'Cómo contratar desarrolladores de software sin equivocarte: proceso, pruebas y errores comunes',
-	'date'       => '2026-07-15 09:00:00',
+	'date'       => '2026-11-25 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Reclutamiento TI', 'Desarrolladores', 'Entrevistas técnicas', 'Talento TI' ],
 	'servicio'   => 'staff-augmentation',

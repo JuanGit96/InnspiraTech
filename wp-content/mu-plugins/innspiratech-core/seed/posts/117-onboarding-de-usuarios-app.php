@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'onboarding-de-usuarios-app',
 	'title'      => 'Onboarding de una app: cómo lograr que el usuario vuelva',
-	'date'       => '2027-05-14 09:00:00',
+	'date'       => '2027-08-25 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Onboarding', 'Retención', 'UX' ],
 	'servicio'   => 'desarrollo-apps-moviles',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'evaluar-perfiles-tecnicos-sin-ser-tecnico',
 	'title'      => 'Cómo evaluar perfiles técnicos si no eres técnico',
-	'date'       => '2026-11-06 09:00:00',
+	'date'       => '2027-02-22 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Contratación', 'Entrevistas técnicas', 'Talento TI', 'Recursos humanos' ],
 	'servicio'   => 'staff-augmentation',

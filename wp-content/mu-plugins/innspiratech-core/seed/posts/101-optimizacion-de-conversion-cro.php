@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'optimizacion-de-conversion-cro',
 	'title'      => 'CRO: 12 pruebas para aumentar la conversión de tu sitio web',
-	'date'       => '2027-04-07 09:00:00',
+	'date'       => '2027-07-19 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'CRO', 'Conversión', 'Pruebas A/B', 'UX' ],
 	'servicio'   => 'marketing-digital',

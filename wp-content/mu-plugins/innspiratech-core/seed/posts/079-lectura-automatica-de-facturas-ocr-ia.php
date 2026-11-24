@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'lectura-automatica-de-facturas-ocr-ia',
 	'title'      => 'OCR e IA para leer facturas y documentos automáticamente',
-	'date'       => '2027-02-15 09:00:00',
+	'date'       => '2027-05-28 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'OCR', 'Inteligencia artificial', 'Automatización', 'Documentos' ],
 	'servicio'   => 'automatizacion-procesos',

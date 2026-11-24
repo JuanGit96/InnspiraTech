@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'cuanto-cuesta-un-desarrollador-en-latinoamerica',
 	'title'      => '¿Cuánto cuesta un desarrollador en Latinoamérica? Tarifas, salarios y costo real',
-	'date'       => '2026-10-09 09:00:00',
+	'date'       => '2027-01-25 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Salarios TI', 'Contratación', 'Staff augmentation', 'Nearshore' ],
 	'servicio'   => 'staff-augmentation',

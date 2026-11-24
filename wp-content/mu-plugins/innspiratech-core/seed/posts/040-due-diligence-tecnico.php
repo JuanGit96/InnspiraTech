@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'due-diligence-tecnico',
 	'title'      => 'Due diligence técnico: qué revisar antes de invertir o comprar software',
-	'date'       => '2026-11-11 09:00:00',
+	'date'       => '2027-02-26 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Due diligence', 'Inversión', 'Auditoría', 'Consultoría tecnológica' ],
 	'servicio'   => 'consultoria-tecnologica',

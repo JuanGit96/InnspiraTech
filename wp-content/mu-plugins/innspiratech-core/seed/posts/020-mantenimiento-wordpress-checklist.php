@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'mantenimiento-wordpress-checklist',
 	'title'      => 'Mantenimiento de WordPress: checklist mensual para un sitio seguro, rápido y actualizado',
-	'date'       => '2026-07-17 09:00:00',
+	'date'       => '2026-11-27 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'WordPress', 'Mantenimiento web', 'Seguridad', 'Rendimiento' ],
 	'servicio'   => 'mantenimiento-software',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'hoja-de-ruta-tecnologica',
 	'title'      => 'Hoja de ruta tecnológica a 12 meses: cómo construirla y sostenerla',
-	'date'       => '2027-01-11 09:00:00',
+	'date'       => '2027-04-23 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Estrategia', 'Planeación', 'Consultoría tecnológica', 'Gestión' ],
 	'servicio'   => 'consultoria-tecnologica',

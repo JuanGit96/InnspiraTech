@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'actualizar-version-de-php',
 	'title'      => 'Cómo actualizar la versión de PHP sin romper tu sitio',
-	'date'       => '2027-02-24 09:00:00',
+	'date'       => '2027-06-07 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'PHP', 'Mantenimiento', 'Seguridad', 'WordPress' ],
 	'servicio'   => 'mantenimiento-software',

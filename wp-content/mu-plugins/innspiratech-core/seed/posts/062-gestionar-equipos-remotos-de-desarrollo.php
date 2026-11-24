@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'gestionar-equipos-remotos-de-desarrollo',
 	'title'      => 'Cómo integrar y gestionar equipos de desarrollo remotos sin perder productividad',
-	'date'       => '2027-01-06 09:00:00',
+	'date'       => '2027-04-19 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Equipos remotos', 'Gestión', 'Productividad', 'Talento TI' ],
 	'servicio'   => 'staff-augmentation',

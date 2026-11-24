@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'seo-para-buscadores-con-ia',
 	'title'      => 'Cómo aparecer en las respuestas de los buscadores con IA',
-	'date'       => '2026-11-13 09:00:00',
+	'date'       => '2027-03-01 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'SEO', 'Inteligencia artificial', 'Contenido', 'Visibilidad' ],
 	'servicio'   => 'marketing-digital',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'metricas-de-apps-moviles',
 	'title'      => 'Cómo medir el éxito de tu app: las métricas que importan',
-	'date'       => '2027-03-19 09:00:00',
+	'date'       => '2027-06-30 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Métricas', 'Retención', 'Producto' ],
 	'servicio'   => 'desarrollo-apps-moviles',

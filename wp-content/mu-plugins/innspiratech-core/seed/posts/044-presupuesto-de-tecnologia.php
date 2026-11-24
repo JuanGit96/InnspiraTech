@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'presupuesto-de-tecnologia',
 	'title'      => 'Presupuesto de tecnología: cómo construirlo y defenderlo ante la gerencia',
-	'date'       => '2026-11-20 09:00:00',
+	'date'       => '2027-03-08 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Presupuesto', 'Gestión', 'Transformación digital', 'Costos' ],
 	'servicio'   => 'transformacion-digital-empresas',

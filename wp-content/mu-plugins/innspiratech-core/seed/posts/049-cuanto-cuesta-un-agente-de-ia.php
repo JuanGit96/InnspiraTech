@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'cuanto-cuesta-un-agente-de-ia',
 	'title'      => '¿Cuánto cuesta operar un agente de IA? Costos reales y cómo controlarlos',
-	'date'       => '2026-12-02 09:00:00',
+	'date'       => '2027-03-19 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Costos', 'ROI', 'Inteligencia artificial' ],
 	'servicio'   => 'agentes-ia-empresas',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'rag-para-empresas',
 	'title'      => 'Qué es RAG y cómo crear un asistente de IA con los documentos de tu empresa',
-	'date'       => '2026-08-05 09:00:00',
+	'date'       => '2026-12-16 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'RAG', 'Agentes de IA', 'IA generativa', 'Gestión del conocimiento' ],
 	'servicio'   => 'agentes-ia-empresas',

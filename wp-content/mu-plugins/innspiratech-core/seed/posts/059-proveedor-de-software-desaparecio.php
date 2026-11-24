@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'proveedor-de-software-desaparecio',
 	'title'      => 'Tu proveedor de software desapareció: qué hacer para recuperar el control',
-	'date'       => '2026-12-28 09:00:00',
+	'date'       => '2027-04-12 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Proveedores', 'Continuidad', 'Auditoría', 'Riesgo' ],
 	'servicio'   => 'mantenimiento-software',

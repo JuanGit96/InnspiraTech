@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'golang-vs-php-vs-nodejs',
 	'title'      => 'Golang, PHP o Node.js: cómo elegir la tecnología del backend de tu proyecto',
-	'date'       => '2026-12-14 09:00:00',
+	'date'       => '2027-03-31 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Backend', 'Golang', 'PHP', 'Node.js' ],
 	'servicio'   => 'desarrollo-software-a-medida',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'copywriting-para-sitios-web',
 	'title'      => 'Cómo escribir los textos de tu sitio web para vender',
-	'date'       => '2027-04-23 09:00:00',
+	'date'       => '2027-08-04 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Copywriting', 'Sitios web', 'Conversión', 'Contenido' ],
 	'servicio'   => 'desarrollo-web-mvp',

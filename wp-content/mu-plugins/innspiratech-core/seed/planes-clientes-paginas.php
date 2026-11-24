@@ -90,6 +90,33 @@ return [
 					[ 'p', 'En <strong>InnspiraTech</strong> no solo escribimos código: construimos soluciones que impulsan la transformación digital.' ],
 					[ 'p', 'Nacimos con la visión de ser el puente entre las ideas complejas y su ejecución técnica impecable. Entendemos que en el mundo actual la velocidad y la calidad deben ir de la mano. Por eso nos especializamos tanto en lanzar MVPs ágiles como en sostener infraestructuras empresariales robustas.' ],
 					[ 'p', 'Hoy sumamos a esa experiencia una apuesta decidida por la inteligencia artificial aplicada: servidores MCP, agentes de IA y automatización que conectan la tecnología con resultados de negocio medibles para empresas pequeñas, medianas y grandes.' ],
+
+					[ 'h2', 'Cómo entendemos nuestro trabajo' ],
+					[ 'p', 'Una empresa no necesita «un chatbot» ni «una automatización»: necesita vender más, perder menos tiempo o cobrar antes. Por eso no empezamos preguntando qué quieres construir, sino <strong>qué número de tu negocio tiene que mejorar</strong> y cuánto te está costando hoy que siga como está.' ],
+					[ 'p', 'Con esa respuesta hacemos tres cosas antes de escribir una línea de código: entendemos el proceso tal como funciona hoy, encontramos el punto exacto donde se pierde el dinero o el tiempo, y <strong>medimos la línea base</strong>. Ese número de partida es lo que después permite demostrar —o desmentir— que lo construido sirvió.' ],
+					[ 'p', 'Al final del proyecto no entregamos solo un sistema: entregamos ese mismo indicador medido igual que al inicio, con la diferencia a la vista. Si mejoró, está demostrado. Si no, lo decimos y ajustamos.' ],
+
+					[ 'h2', 'Lo que te prometemos por escrito' ],
+					[
+						'ul',
+						[
+							'<strong>Un resultado:</strong> qué indicador mejora, medido como ya lo mides tú.',
+							'<strong>Un plazo:</strong> en cuánto tiempo, con revisiones intermedias y sin sorpresas al final.',
+							'<strong>Una condición:</strong> qué necesitamos de tu lado para que ocurra, desde accesos y datos hasta que tu equipo use la herramienta.',
+						],
+					],
+					[ 'p', 'Cuando el indicador es claro y medible, podemos ir más lejos y <strong>compartir el riesgo</strong>: una parte del pago atada a que el número llegue a lo acordado. Se define caso a caso y siempre antes de empezar.' ],
+
+					[ 'h2', 'En qué somos distintos' ],
+					[
+						'ul',
+						[
+							'<strong>Hablamos de negocio antes que de tecnología.</strong> La herramienta se elige después del problema, nunca al revés.',
+							'<strong>Medimos antes y después.</strong> Lo que no se puede medir, no se puede cobrar como mejora.',
+							'<strong>El conocimiento se queda contigo.</strong> Código documentado, accesos a tu nombre y capacitación incluida.',
+							'<strong>Trabajamos con la misma seriedad en una pyme que en una gran empresa.</strong> Cambia el alcance, no el rigor.',
+						],
+					],
 				]
 			),
 			'meta'    => [
@@ -104,6 +131,7 @@ return [
 			'content' => it_seed_blocks(
 				[
 					[ 'p', 'Tanto si necesitas validar un modelo de negocio en 72 horas como si buscas delegar la arquitectura crítica de un e-commerce enterprise, tenemos el equipo y el rigor técnico para ejecutarlo sin fricciones.' ],
+					[ 'p', '<strong>Una pista para que la primera conversación rinda:</strong> cuéntanos qué número de tu negocio quieres mover —solicitudes que llegan, horas que se van en tareas manuales, días que tarda el recaudo, ventas que se caen en el carrito— y cuánto vale hoy. Con eso te decimos si podemos ayudarte, cómo lo mediríamos y qué alcance tendría sentido. Si no podemos mejorarlo, también te lo decimos.' ],
 				]
 			),
 			'meta'    => [

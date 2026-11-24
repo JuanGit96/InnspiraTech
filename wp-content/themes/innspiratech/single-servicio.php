@@ -18,6 +18,7 @@ while ( have_posts() ) :
 	$it_price        = it_meta( $it_id, 'precio_desde' );
 	$it_benefits     = it_parse_pairs( (string) it_meta( $it_id, 'beneficios' ) );
 	$it_deliverables = it_parse_lines( (string) it_meta( $it_id, 'entregables' ) );
+	$it_kpis         = it_parse_lines( (string) it_meta( $it_id, 'kpis' ) );
 	$it_cta          = (string) it_meta( $it_id, 'cta', 'Cotizar este servicio' );
 	$it_lineas       = wp_get_post_terms( $it_id, 'linea_servicio' );
 	$it_linea        = ( ! is_wp_error( $it_lineas ) && $it_lineas ) ? $it_lineas[0] : null;
@@ -42,7 +43,7 @@ while ( have_posts() ) :
 					</div>
 					<h1 class="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-[3.5rem] lg:leading-[1.1]"><?php the_title(); ?></h1>
 					<?php if ( has_excerpt() ) : ?>
-						<p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl"><?php echo esc_html( get_the_excerpt() ); ?></p>
+						<p class="it-speakable mt-5 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl"><?php echo esc_html( get_the_excerpt() ); ?></p>
 					<?php endif; ?>
 					<div class="mt-9 flex flex-col gap-4 sm:flex-row">
 						<a class="btn-primary btn-lg" href="<?php echo esc_url( $it_contact ); ?>"><?php echo esc_html( $it_cta ); ?> <?php echo it_icon( 'arrow-right', 'size-5' ); // phpcs:ignore ?></a>
@@ -66,6 +67,27 @@ while ( have_posts() ) :
 				<div class="prose prose-lg prose-slate max-w-none prose-headings:scroll-mt-28 prose-headings:font-bold prose-headings:text-indark prose-a:font-semibold prose-a:text-inblue prose-a:no-underline prose-a:hover:underline prose-strong:text-indark prose-li:marker:text-inblue">
 					<?php the_content(); ?>
 				</div>
+
+				<?php if ( $it_kpis ) : ?>
+					<section class="mt-16 overflow-hidden rounded-3xl bg-indark p-8 text-white sm:p-10" aria-labelledby="kpis-titulo">
+						<p class="text-xs font-bold tracking-widest text-cyan-300 uppercase">Lo que de verdad compras</p>
+						<h2 id="kpis-titulo" class="mt-3 text-2xl font-bold sm:text-3xl">Los indicadores que movemos con este servicio</h2>
+						<p class="mt-3 max-w-2xl text-slate-300">
+							Antes de construir nada medimos cómo está hoy cada uno. Al final te entregamos el mismo número, con la diferencia a la vista.
+						</p>
+						<ul class="mt-8 grid gap-4 sm:grid-cols-2" role="list">
+							<?php foreach ( $it_kpis as $it_kpi ) : ?>
+								<li class="flex items-start gap-3 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+									<?php echo it_icon( 'trending-up', 'size-5 shrink-0 text-cyan-300' ); // phpcs:ignore ?>
+									<span class="font-medium text-slate-100"><?php echo esc_html( $it_kpi ); ?></span>
+								</li>
+							<?php endforeach; ?>
+						</ul>
+						<p class="mt-7 text-sm text-slate-400">
+							¿Tu indicador no está en la lista? <a class="font-semibold text-cyan-300 underline-offset-4 hover:underline" href="<?php echo esc_url( $it_contact ); ?>">Cuéntanos cuál quieres mover</a> y lo acordamos al inicio.
+						</p>
+					</section>
+				<?php endif; ?>
 
 				<?php if ( $it_benefits ) : ?>
 					<h2 class="mt-16 text-2xl font-bold text-indark sm:text-3xl">Beneficios para tu empresa</h2>

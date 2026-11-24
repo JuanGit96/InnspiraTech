@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'cuanto-cuesta-desarrollar-una-app',
 	'title'      => '¿Cuánto cuesta desarrollar una app en 2026? Guía de costos, tiempos y factores',
-	'date'       => '2026-08-12 09:00:00',
+	'date'       => '2026-12-23 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Presupuesto', 'Flutter', 'Desarrollo de apps' ],
 	'servicio'   => 'desarrollo-apps-moviles',

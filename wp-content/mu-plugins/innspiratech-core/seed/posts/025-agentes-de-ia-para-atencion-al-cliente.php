@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'agentes-de-ia-para-atencion-al-cliente',
 	'title'      => 'Agentes de IA para atención al cliente: cómo implementarlos paso a paso',
-	'date'       => '2026-10-07 09:00:00',
+	'date'       => '2027-01-22 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Atención al cliente', 'Servicio al cliente', 'WhatsApp' ],
 	'servicio'   => 'agentes-ia-empresas',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-elegir-un-erp',
 	'title'      => 'Cómo elegir un ERP para tu empresa sin arrepentirte',
-	'date'       => '2027-01-20 09:00:00',
+	'date'       => '2027-05-03 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'ERP', 'Selección de software', 'Procesos', 'Transformación digital' ],
 	'servicio'   => 'transformacion-digital-empresas',

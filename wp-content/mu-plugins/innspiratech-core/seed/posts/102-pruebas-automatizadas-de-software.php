@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'pruebas-automatizadas-de-software',
 	'title'      => 'Pruebas automatizadas: qué son y por qué te ahorran dinero',
-	'date'       => '2027-04-09 09:00:00',
+	'date'       => '2027-07-21 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Pruebas automatizadas', 'Calidad de software', 'QA', 'Desarrollo' ],
 	'servicio'   => 'desarrollo-software-a-medida',

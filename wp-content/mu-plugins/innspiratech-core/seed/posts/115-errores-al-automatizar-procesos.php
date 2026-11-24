@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'errores-al-automatizar-procesos',
 	'title'      => 'Errores comunes al automatizar procesos (y cómo evitarlos)',
-	'date'       => '2027-05-10 09:00:00',
+	'date'       => '2027-08-20 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'Procesos', 'Buenas prácticas', 'Riesgos' ],
 	'servicio'   => 'automatizacion-procesos',

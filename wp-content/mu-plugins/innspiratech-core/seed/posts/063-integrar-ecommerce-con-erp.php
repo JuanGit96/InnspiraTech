@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'integrar-ecommerce-con-erp',
 	'title'      => 'Cómo integrar tu e-commerce con el ERP: guía práctica',
-	'date'       => '2027-01-08 09:00:00',
+	'date'       => '2027-04-21 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'ERP', 'Integraciones', 'Inventario' ],
 	'servicio'   => 'desarrollo-ecommerce',

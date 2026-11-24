@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-estimar-un-proyecto-de-software',
 	'title'      => 'Cómo estimar un proyecto de software (y por qué fallan las estimaciones)',
-	'date'       => '2027-01-15 09:00:00',
+	'date'       => '2027-04-28 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Estimación', 'Gestión de proyectos', 'Presupuesto', 'Desarrollo' ],
 	'servicio'   => 'desarrollo-software-a-medida',

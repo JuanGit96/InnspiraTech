@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'app-nativa-web-app-o-pwa',
 	'title'      => '¿App nativa, aplicación web o PWA? Cuál necesita tu negocio',
-	'date'       => '2026-12-21 09:00:00',
+	'date'       => '2027-04-07 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'PWA', 'Aplicaciones web', 'Producto' ],
 	'servicio'   => 'desarrollo-apps-moviles',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'guardrails-para-agentes-de-ia',
 	'title'      => 'Guardrails: cómo poner límites seguros a un agente de IA',
-	'date'       => '2027-03-01 09:00:00',
+	'date'       => '2027-06-11 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Seguridad', 'Gobierno de IA', 'Riesgos' ],
 	'servicio'   => 'agentes-ia-empresas',

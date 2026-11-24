@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'escalar-equipo-de-desarrollo',
 	'title'      => 'Cómo escalar un equipo de desarrollo de 3 a 15 personas sin perder velocidad',
-	'date'       => '2027-03-31 09:00:00',
+	'date'       => '2027-07-12 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Equipos', 'Escalamiento', 'Liderazgo', 'Procesos' ],
 	'servicio'   => 'staff-augmentation',

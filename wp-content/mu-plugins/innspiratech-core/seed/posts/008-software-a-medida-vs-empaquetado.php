@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'software-a-medida-vs-software-empaquetado',
 	'title'      => 'Software a medida o software empaquetado: cómo decidir qué le conviene a tu empresa',
-	'date'       => '2026-08-07 09:00:00',
+	'date'       => '2026-12-18 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Software a medida', 'SaaS', 'Costo total de propiedad', 'Estrategia' ],
 	'servicio'   => 'desarrollo-software-a-medida',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'core-web-vitals',
 	'title'      => 'Core Web Vitals: cómo acelerar tu sitio y por qué afecta tus ventas',
-	'date'       => '2027-03-26 09:00:00',
+	'date'       => '2027-07-07 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Core Web Vitals', 'Rendimiento web', 'SEO técnico', 'Conversión' ],
 	'servicio'   => 'desarrollo-web-mvp',

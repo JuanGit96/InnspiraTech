@@ -134,6 +134,13 @@ function it_schema_graph(): array {
 	if ( $desc ) {
 		$page['description'] = $desc;
 	}
+
+	// Fragmentos que un asistente de voz o un modelo puede leer en voz alta:
+	// el titular y la entradilla, que es donde está la respuesta corta.
+	$page['speakable'] = array(
+		'@type'       => 'SpeakableSpecification',
+		'cssSelector' => array( 'h1', '.it-speakable' ),
+	);
 	if ( is_front_page() ) {
 		$page['about'] = array( '@id' => $org_id );
 	}
@@ -267,6 +274,19 @@ function it_schema_graph(): array {
 		if ( $tags ) {
 			$article['keywords'] = implode( ', ', $tags );
 		}
+
+		// Conecta el artículo con el servicio que resuelve lo que explica: le dice
+		// al buscador (y al modelo que cite el texto) de qué trata y quién lo ofrece.
+		$servicio_id = (int) it_meta( $post->ID, 'servicio_relacionado' );
+		if ( $servicio_id && 'publish' === get_post_status( $servicio_id ) ) {
+			$article['about'] = array(
+				'@type'       => 'Service',
+				'@id'         => get_permalink( $servicio_id ) . '#service',
+				'name'        => it_plain( get_the_title( $servicio_id ) ),
+				'url'         => get_permalink( $servicio_id ),
+				'provider'    => array( '@id' => $org_id ),
+			);
+		}
 		$graph[] = $article;
 	}
 
@@ -290,6 +310,23 @@ function it_schema_graph(): array {
 		if ( it_opt( 'area_servida' ) ) {
 			$service['areaServed'] = array_map( 'trim', explode( ',', (string) it_opt( 'area_servida' ) ) );
 		}
+		// A quién está dirigido: ayuda a que el servicio aparezca ante la consulta
+		// «… para pymes» o «… para empresas grandes», que es como se busca.
+		$service['audience'] = array(
+			array( '@type' => 'Audience', 'audienceType' => 'Pymes y emprendedores' ),
+			array( '@type' => 'Audience', 'audienceType' => 'Empresas medianas en crecimiento' ),
+			array( '@type' => 'Audience', 'audienceType' => 'Grandes empresas' ),
+		);
+
+		// Los indicadores que el servicio mueve: lo que el cliente compra de verdad.
+		$kpis = it_parse_lines( (string) it_meta( $post->ID, 'kpis' ) );
+		if ( $kpis ) {
+			$service['serviceOutput'] = array_map(
+				static fn( $kpi ) => array( '@type' => 'Thing', 'name' => it_plain( $kpi ) ),
+				$kpis
+			);
+		}
+
 		$price = it_meta( $post->ID, 'precio_desde' );
 		if ( is_numeric( $price ) ) {
 			$service['offers'] = array(

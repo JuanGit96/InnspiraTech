@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'seo-para-empresas-b2b',
 	'title'      => 'SEO para empresas B2B: cómo conseguir clientes desde Google paso a paso',
-	'date'       => '2026-08-21 09:00:00',
+	'date'       => '2027-01-06 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'SEO', 'Marketing B2B', 'Generación de leads', 'Contenidos' ],
 	'servicio'   => 'marketing-digital',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-priorizar-el-backlog',
 	'title'      => 'Cómo priorizar el backlog de tu producto digital',
-	'date'       => '2027-05-07 09:00:00',
+	'date'       => '2027-08-18 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Producto', 'Priorización', 'Gestión de proyectos', 'Metodologías ágiles' ],
 	'servicio'   => 'desarrollo-software-a-medida',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'conectar-erp-con-ia-mcp',
 	'title'      => 'Cómo conectar tu ERP con la IA usando MCP: arquitectura de referencia',
-	'date'       => '2026-10-28 09:00:00',
+	'date'       => '2027-02-12 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'ERP', 'Integraciones', 'Agentes de IA' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

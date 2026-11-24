@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'email-marketing-para-empresas',
 	'title'      => 'Email marketing para empresas: del primer envío a la automatización',
-	'date'       => '2027-02-10 09:00:00',
+	'date'       => '2027-05-24 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Email marketing', 'Automatización', 'Entregabilidad', 'CRM' ],
 	'servicio'   => 'marketing-digital',

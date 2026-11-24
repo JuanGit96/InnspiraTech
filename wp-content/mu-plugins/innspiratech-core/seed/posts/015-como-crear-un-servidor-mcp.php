@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-crear-un-servidor-mcp',
 	'title'      => 'Cómo crear un servidor MCP paso a paso: guía práctica con buenas prácticas de seguridad',
-	'date'       => '2026-07-29 09:00:00',
+	'date'       => '2026-12-09 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Model Context Protocol', 'Python', 'Desarrollo' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

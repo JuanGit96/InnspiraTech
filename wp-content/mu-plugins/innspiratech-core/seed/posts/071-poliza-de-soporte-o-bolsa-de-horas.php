@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'poliza-de-soporte-o-bolsa-de-horas',
 	'title'      => 'Póliza de soporte o bolsa de horas: qué modalidad conviene para tu software',
-	'date'       => '2027-01-27 09:00:00',
+	'date'       => '2027-05-10 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Soporte', 'Mantenimiento', 'Contratos', 'Proveedores' ],
 	'servicio'   => 'mantenimiento-software',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'gestion-del-cambio-tecnologico',
 	'title'      => 'Gestión del cambio: cómo lograr que tu equipo sí adopte la nueva tecnología',
-	'date'       => '2027-03-17 09:00:00',
+	'date'       => '2027-06-28 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Gestión del cambio', 'Adopción', 'Transformación digital', 'Liderazgo' ],
 	'servicio'   => 'transformacion-digital-empresas',

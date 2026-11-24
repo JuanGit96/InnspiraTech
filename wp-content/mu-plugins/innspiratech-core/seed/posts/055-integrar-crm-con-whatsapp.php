@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'integrar-crm-con-whatsapp',
 	'title'      => 'Cómo integrar tu CRM con WhatsApp, el correo y tu sitio web',
-	'date'       => '2026-12-16 09:00:00',
+	'date'       => '2027-04-02 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'CRM', 'WhatsApp', 'Integraciones', 'Automatización' ],
 	'servicio'   => 'automatizacion-procesos',

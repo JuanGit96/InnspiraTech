@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'roles-equipo-de-desarrollo',
 	'title'      => 'Roles de un equipo de producto digital: quién hace qué',
-	'date'       => '2027-04-28 09:00:00',
+	'date'       => '2027-08-09 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Equipos', 'Roles', 'Producto', 'Talento TI' ],
 	'servicio'   => 'staff-augmentation',

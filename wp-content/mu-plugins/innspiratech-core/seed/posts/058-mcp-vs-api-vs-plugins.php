@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'mcp-vs-api-vs-plugins',
 	'title'      => 'MCP, APIs o plugins: en qué se diferencian y cuándo usar cada uno',
-	'date'       => '2026-12-23 09:00:00',
+	'date'       => '2027-04-09 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'API', 'Integraciones', 'Arquitectura' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

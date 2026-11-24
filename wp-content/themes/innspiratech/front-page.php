@@ -12,6 +12,7 @@ get_header();
 
 get_template_part( 'template-parts/home/hero' );
 get_template_part( 'template-parts/components/clients' );
+get_template_part( 'template-parts/home/resultados' );
 get_template_part( 'template-parts/home/services' );
 get_template_part( 'template-parts/home/ai-band' );
 get_template_part( 'template-parts/home/segments' );

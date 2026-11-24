@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'equipo-de-tecnologia-interno-o-proveedor',
 	'title'      => '¿Equipo de tecnología interno o proveedor externo? Cuándo construir tu propia área',
-	'date'       => '2027-03-08 09:00:00',
+	'date'       => '2027-06-18 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Estrategia', 'Equipos', 'Proveedores', 'Consultoría tecnológica' ],
 	'servicio'   => 'consultoria-tecnologica',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'automatizacion-recursos-humanos',
 	'title'      => 'Automatización en recursos humanos: permisos, vacaciones e incorporación',
-	'date'       => '2027-03-15 09:00:00',
+	'date'       => '2027-06-25 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Recursos humanos', 'Automatización', 'Procesos', 'Productividad' ],
 	'servicio'   => 'automatizacion-procesos',

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'que-es-la-deuda-tecnica',
 	'title'      => 'Deuda técnica: qué es, cómo medirla y cuándo pagarla',
-	'date'       => '2026-08-03 09:00:00',
+	'date'       => '2026-12-14 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Deuda técnica', 'Mantenimiento de software', 'Calidad de código', 'Arquitectura' ],
 	'servicio'   => 'mantenimiento-software',

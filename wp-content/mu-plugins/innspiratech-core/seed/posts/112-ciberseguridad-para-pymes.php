@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'ciberseguridad-para-pymes',
 	'title'      => 'Ciberseguridad para pymes: lo mínimo indispensable',
-	'date'       => '2027-05-03 09:00:00',
+	'date'       => '2027-08-13 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Ciberseguridad', 'Pymes', 'Riesgos', 'Buenas prácticas' ],
 	'servicio'   => 'consultoria-tecnologica',

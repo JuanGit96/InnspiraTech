@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'mcp-remoto-despliegue',
 	'title'      => 'MCP remoto: despliegue, escalado y monitoreo en producción',
-	'date'       => '2027-04-19 09:00:00',
+	'date'       => '2027-07-30 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Infraestructura', 'Monitoreo', 'DevOps' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

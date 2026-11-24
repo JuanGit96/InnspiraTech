@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'migrar-tienda-online-sin-perder-seo',
 	'title'      => 'Cómo migrar tu tienda online sin perder SEO ni ventas',
-	'date'       => '2026-11-09 09:00:00',
+	'date'       => '2027-02-24 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'Migración', 'SEO técnico', 'WooCommerce' ],
 	'servicio'   => 'desarrollo-ecommerce',

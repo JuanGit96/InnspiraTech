@@ -98,6 +98,12 @@ function it_meta_boxes_config(): array {
 						'type'  => 'text',
 						'help'  => 'Frase genérica que describe el servicio, ej. "Desarrollo de servidores MCP".',
 					),
+					'kpis'          => array(
+						'label' => 'Indicadores que mueve — uno por línea',
+						'type'  => 'textarea',
+						'rows'  => 4,
+						'help'  => 'El resultado de negocio que compra el cliente, no la tecnología. Ej. "Tiempo de primera respuesta a un lead". Se muestra en la ficha y se publica como datos estructurados.',
+					),
 					'beneficios'    => array(
 						'label' => 'Beneficios — uno por línea: Título | Descripción',
 						'type'  => 'textarea',

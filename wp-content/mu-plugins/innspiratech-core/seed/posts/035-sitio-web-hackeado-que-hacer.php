@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'sitio-web-hackeado-que-hacer',
 	'title'      => 'Sitio web hackeado: qué hacer paso a paso para recuperarlo',
-	'date'       => '2026-10-30 09:00:00',
+	'date'       => '2027-02-15 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Seguridad', 'WordPress', 'Incidentes', 'Mantenimiento web' ],
 	'servicio'   => 'mantenimiento-software',

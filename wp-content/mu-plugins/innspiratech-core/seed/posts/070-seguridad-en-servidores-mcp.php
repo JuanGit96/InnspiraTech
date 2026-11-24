@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'seguridad-en-servidores-mcp',
 	'title'      => 'Seguridad en servidores MCP: permisos, autenticación y auditoría',
-	'date'       => '2027-01-25 09:00:00',
+	'date'       => '2027-05-07 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'MCP', 'Seguridad', 'OAuth', 'Auditoría' ],
 	'servicio'   => 'desarrollo-servidores-mcp',

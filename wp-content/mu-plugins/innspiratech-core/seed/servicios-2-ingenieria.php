@@ -47,6 +47,12 @@ return [
 			'precio_desde'  => '140',
 			'tipo_servicio' => 'Desarrollo web',
 			'cta'           => 'Cotizar mi sitio web',
+			'kpis'          => [
+				'Solicitudes de contacto que llegan al mes',
+				'Porcentaje de visitas que terminan en contacto',
+				'Tiempo de carga en móvil',
+				'Semanas hasta tener la primera versión en línea',
+			],
 			'beneficios'    => [
 				[ 'Lanzamiento rápido', 'Presencia digital profesional en días o pocas semanas, no meses.' ],
 				[ 'Optimizado para Google', 'Estructura, velocidad y contenido pensados para posicionar.' ],
@@ -108,6 +114,12 @@ return [
 			'precio_desde'  => '350',
 			'tipo_servicio' => 'Desarrollo de comercio electrónico',
 			'cta'           => 'Cotizar mi tienda online',
+			'kpis'          => [
+				'Porcentaje de visitas que terminan en compra',
+				'Ventas recuperadas de carritos abandonados',
+				'Valor promedio del pedido',
+				'Pedidos despachados el mismo día',
+			],
 			'beneficios'    => [
 				[ 'Más ventas online', 'Experiencias de compra rápidas y un checkout sin fricción.' ],
 				[ 'Operación integrada', 'Pedidos, inventario y facturación sincronizados con tus sistemas.' ],
@@ -169,6 +181,12 @@ return [
 			'icono'         => 'code',
 			'tipo_servicio' => 'Desarrollo de software a medida',
 			'cta'           => 'Cotizar mi software',
+			'kpis'          => [
+				'Horas al mes en tareas manuales y digitación',
+				'Errores que obligan a rehacer trabajo',
+				'Tiempo de ciclo del proceso, de inicio a fin',
+				'Costo por transacción atendida',
+			],
 			'beneficios'    => [
 				[ 'Ventaja competitiva', 'Procesos únicos soportados por software hecho a tu medida.' ],
 				[ 'Escalabilidad', 'Arquitecturas preparadas para crecer en usuarios y datos.' ],
@@ -229,6 +247,12 @@ return [
 			'icono'         => 'device-mobile',
 			'tipo_servicio' => 'Desarrollo de aplicaciones móviles',
 			'cta'           => 'Cotizar mi app',
+			'kpis'          => [
+				'Usuarios que vuelven cada semana',
+				'Tiempo por visita o registro en campo',
+				'Pedidos tomados sin digitar dos veces',
+				'Calificación de la app en las tiendas',
+			],
 			'beneficios'    => [
 				[ 'Una base de código, dos plataformas', 'Flutter reduce tiempos y costos sin sacrificar calidad.' ],
 				[ 'Experiencia de calidad', 'Interfaces rápidas, accesibles y fáciles de usar.' ],
@@ -282,6 +306,12 @@ return [
 			'icono'         => 'cog',
 			'tipo_servicio' => 'Mantenimiento y soporte de software',
 			'cta'           => 'Solicitar auditoría',
+			'kpis'          => [
+				'Minutos de caída al mes',
+				'Tiempo de recuperación cuando algo falla',
+				'Incidentes que se repiten',
+				'Vulnerabilidades conocidas sin corregir',
+			],
 			'beneficios'    => [
 				[ 'Menos caídas y errores', 'Sistemas estables que no frenan la operación.' ],
 				[ 'Seguridad al día', 'Dependencias actualizadas y vulnerabilidades corregidas.' ],

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-escribir-contenido-seo',
 	'title'      => 'Cómo escribir contenido que posicione en Google y convierta en clientes',
-	'date'       => '2026-12-11 09:00:00',
+	'date'       => '2027-03-29 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'SEO', 'Contenidos', 'Copywriting', 'Blog' ],
 	'servicio'   => 'marketing-digital',

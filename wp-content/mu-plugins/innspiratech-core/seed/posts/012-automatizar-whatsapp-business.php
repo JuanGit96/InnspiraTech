@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'automatizar-whatsapp-business',
 	'title'      => 'Cómo automatizar WhatsApp Business para vender y atender más rápido',
-	'date'       => '2026-08-10 09:00:00',
+	'date'       => '2026-12-21 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'WhatsApp Business', 'Automatización', 'Ventas', 'Atención al cliente' ],
 	'servicio'   => 'automatizacion-procesos',

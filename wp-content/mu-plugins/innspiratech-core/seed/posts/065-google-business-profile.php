@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'google-business-profile',
 	'title'      => 'Google Business Profile: guía completa para empresas y negocios locales',
-	'date'       => '2027-01-13 09:00:00',
+	'date'       => '2027-04-26 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Google Business Profile', 'SEO local', 'Marketing digital', 'Reseñas' ],
 	'servicio'   => 'marketing-digital',

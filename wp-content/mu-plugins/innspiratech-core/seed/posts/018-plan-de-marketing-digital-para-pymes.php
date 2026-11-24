@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'plan-de-marketing-digital-para-pymes',
 	'title'      => 'Plan de marketing digital para pymes: cómo crearlo paso a paso (con plantilla)',
-	'date'       => '2026-07-31 09:00:00',
+	'date'       => '2026-12-11 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Marketing digital', 'Pymes', 'Estrategia', 'Plantillas' ],
 	'servicio'   => 'marketing-digital',

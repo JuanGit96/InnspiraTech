@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'transformacion-digital-pymes',
 	'title'      => 'Transformación digital en pymes: hoja de ruta en 5 etapas',
-	'date'       => '2026-08-26 09:00:00',
+	'date'       => '2027-01-11 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Pymes', 'Transformación digital', 'Productividad', 'Estrategia' ],
 	'servicio'   => 'transformacion-digital-empresas',

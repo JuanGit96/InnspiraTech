@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'checklist-lanzamiento-sitio-web',
 	'title'      => 'Checklist antes de lanzar un sitio web corporativo: 50 puntos que no puedes olvidar',
-	'date'       => '2026-11-02 09:00:00',
+	'date'       => '2027-02-17 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Lanzamiento web', 'SEO técnico', 'Checklist', 'Sitios web' ],
 	'servicio'   => 'desarrollo-web-mvp',

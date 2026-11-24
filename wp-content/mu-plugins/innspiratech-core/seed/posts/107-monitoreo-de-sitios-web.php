@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'monitoreo-de-sitios-web',
 	'title'      => 'Monitoreo: entérate antes que tus clientes de que tu sitio falló',
-	'date'       => '2027-04-21 09:00:00',
+	'date'       => '2027-08-02 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Monitoreo', 'Disponibilidad', 'Mantenimiento', 'Alertas' ],
 	'servicio'   => 'mantenimiento-software',

@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 define( 'IT_CORE_VERSION', '1.0.0' );
 define( 'IT_CORE_DIR', __DIR__ . '/innspiratech-core' );
 
-foreach ( array( 'helpers', 'post-types', 'meta-fields', 'leads', 'seo', 'schema', 'publicacion' ) as $it_core_file ) {
+foreach ( array( 'helpers', 'post-types', 'meta-fields', 'leads', 'seo', 'schema', 'publicacion', 'buscadores-ia' ) as $it_core_file ) {
 	require_once IT_CORE_DIR . '/' . $it_core_file . '.php';
 }
 

@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'modernizacion-sistemas-heredados',
 	'title'      => 'Modernización de sistemas heredados: cómo transformar una gran empresa sin detener la operación',
-	'date'       => '2026-07-22 09:00:00',
+	'date'       => '2026-12-02 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Sistemas heredados', 'Modernización', 'Grandes empresas', 'Arquitectura' ],
 	'servicio'   => 'transformacion-digital-empresas',

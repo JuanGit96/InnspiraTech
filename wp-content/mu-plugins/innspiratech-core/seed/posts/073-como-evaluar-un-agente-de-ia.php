@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'como-evaluar-un-agente-de-ia',
 	'title'      => 'Cómo evaluar un agente de IA antes y después de lanzarlo',
-	'date'       => '2027-02-01 09:00:00',
+	'date'       => '2027-05-14 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Evaluación', 'Calidad', 'Métricas' ],
 	'servicio'   => 'agentes-ia-empresas',

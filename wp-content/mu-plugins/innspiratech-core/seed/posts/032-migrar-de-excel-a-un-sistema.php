@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'migrar-de-excel-a-un-sistema',
 	'title'      => 'Del Excel al sistema: cómo migrar procesos críticos sin frenar la operación',
-	'date'       => '2026-10-23 09:00:00',
+	'date'       => '2027-02-08 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Transformación digital', 'Excel', 'Procesos', 'Migración de datos' ],
 	'servicio'   => 'transformacion-digital-empresas',

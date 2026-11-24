@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'tablero-de-control-gerencial',
 	'title'      => 'Cómo construir un tablero de control gerencial que sí se use',
-	'date'       => '2027-04-14 09:00:00',
+	'date'       => '2027-07-26 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Tableros de control', 'Indicadores', 'Datos', 'Gestión' ],
 	'servicio'   => 'transformacion-digital-empresas',

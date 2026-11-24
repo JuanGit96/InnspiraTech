@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'ecommerce-b2b',
 	'title'      => 'E-commerce B2B: cómo vender a otras empresas en línea',
-	'date'       => '2027-03-05 09:00:00',
+	'date'       => '2027-06-16 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce B2B', 'Ventas', 'Portal de clientes', 'ERP' ],
 	'servicio'   => 'desarrollo-ecommerce',

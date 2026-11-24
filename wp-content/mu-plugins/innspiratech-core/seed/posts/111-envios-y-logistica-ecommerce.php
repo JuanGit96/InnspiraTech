@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'envios-y-logistica-ecommerce',
 	'title'      => 'Envíos y logística en e-commerce: cómo configurarlos sin perder margen',
-	'date'       => '2027-04-30 09:00:00',
+	'date'       => '2027-08-11 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'Logística', 'Envíos', 'Márgenes' ],
 	'servicio'   => 'desarrollo-ecommerce',

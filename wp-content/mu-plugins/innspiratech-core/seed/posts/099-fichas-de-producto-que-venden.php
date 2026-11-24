@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'fichas-de-producto-que-venden',
 	'title'      => 'Fichas de producto que venden: estructura, SEO y ejemplos',
-	'date'       => '2027-04-02 09:00:00',
+	'date'       => '2027-07-14 09:00:00',
 	'categories' => [ 'e-commerce' ],
 	'tags'       => [ 'E-commerce', 'SEO', 'Conversión', 'Contenido' ],
 	'servicio'   => 'desarrollo-ecommerce',

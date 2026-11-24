@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'landing-page-que-convierte',
 	'title'      => 'Cómo hacer una landing page que convierta: estructura, ejemplos y errores',
-	'date'       => '2027-02-26 09:00:00',
+	'date'       => '2027-06-09 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Landing page', 'Conversión', 'Copywriting', 'Campañas' ],
 	'servicio'   => 'desarrollo-web-mvp',

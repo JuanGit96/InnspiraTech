@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'auditoria-de-codigo',
 	'title'      => 'Auditoría de código: qué revisa, qué entrega y cuándo la necesitas',
-	'date'       => '2026-11-27 09:00:00',
+	'date'       => '2027-03-15 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Auditoría', 'Calidad de software', 'Seguridad', 'Deuda técnica' ],
 	'servicio'   => 'mantenimiento-software',

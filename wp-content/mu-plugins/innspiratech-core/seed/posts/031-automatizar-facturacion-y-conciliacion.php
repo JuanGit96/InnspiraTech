@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'automatizar-facturacion-y-conciliacion',
 	'title'      => 'Cómo automatizar la facturación y la conciliación bancaria de tu empresa',
-	'date'       => '2026-10-21 09:00:00',
+	'date'       => '2027-02-05 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'Facturación electrónica', 'Conciliación bancaria', 'Finanzas' ],
 	'servicio'   => 'automatizacion-procesos',

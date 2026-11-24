@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'diagnostico-de-madurez-digital',
 	'title'      => 'Diagnóstico de madurez digital: cómo evaluar a tu empresa en 6 dimensiones',
-	'date'       => '2027-02-17 09:00:00',
+	'date'       => '2027-05-31 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Madurez digital', 'Diagnóstico', 'Transformación digital', 'Estrategia' ],
 	'servicio'   => 'transformacion-digital-empresas',

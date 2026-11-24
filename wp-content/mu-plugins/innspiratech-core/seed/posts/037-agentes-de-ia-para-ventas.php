@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'agentes-de-ia-para-ventas',
 	'title'      => 'Agentes de ventas con IA: cómo calificar y dar seguimiento a tus leads',
-	'date'       => '2026-11-04 09:00:00',
+	'date'       => '2027-02-19 09:00:00',
 	'categories' => [ 'inteligencia-artificial' ],
 	'tags'       => [ 'Agentes de IA', 'Ventas', 'CRM', 'Automatización comercial' ],
 	'servicio'   => 'agentes-ia-empresas',

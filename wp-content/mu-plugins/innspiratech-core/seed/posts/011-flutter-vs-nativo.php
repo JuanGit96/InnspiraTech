@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'flutter-vs-nativo',
 	'title'      => 'Flutter vs desarrollo nativo: cuál elegir para la app de tu empresa',
-	'date'       => '2026-07-10 09:00:00',
+	'date'       => '2026-11-20 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Flutter', 'Apps móviles', 'Swift', 'Kotlin' ],
 	'servicio'   => 'desarrollo-apps-moviles',

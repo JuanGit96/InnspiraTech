@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'automatizar-captura-de-leads-crm',
 	'title'      => 'Del formulario al CRM: cómo automatizar la captura y el seguimiento de leads',
-	'date'       => '2026-11-18 09:00:00',
+	'date'       => '2027-03-05 09:00:00',
 	'categories' => [ 'transformacion-digital' ],
 	'tags'       => [ 'Automatización', 'CRM', 'Leads', 'Ventas' ],
 	'servicio'   => 'automatizacion-procesos',

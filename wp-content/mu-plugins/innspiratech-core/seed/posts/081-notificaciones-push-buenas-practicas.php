@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'notificaciones-push-buenas-practicas',
 	'title'      => 'Notificaciones push que no molestan (y aumentan el uso de tu app)',
-	'date'       => '2027-02-19 09:00:00',
+	'date'       => '2027-06-02 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Apps móviles', 'Notificaciones push', 'Retención', 'UX' ],
 	'servicio'   => 'desarrollo-apps-moviles',

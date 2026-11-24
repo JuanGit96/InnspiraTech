@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'integracion-de-sistemas-empresariales',
 	'title'      => 'Integraciones y APIs: cómo conectar los sistemas de tu empresa sin caos',
-	'date'       => '2027-02-12 09:00:00',
+	'date'       => '2027-05-26 09:00:00',
 	'categories' => [ 'desarrollo-de-software' ],
 	'tags'       => [ 'Integraciones', 'API', 'Arquitectura', 'Datos' ],
 	'servicio'   => 'desarrollo-software-a-medida',

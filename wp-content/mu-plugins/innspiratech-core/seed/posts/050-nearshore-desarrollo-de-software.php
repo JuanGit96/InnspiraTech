@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'nearshore-desarrollo-de-software',
 	'title'      => 'Nearshore: ventajas de contratar desarrollo en tu misma zona horaria',
-	'date'       => '2026-12-04 09:00:00',
+	'date'       => '2027-03-22 09:00:00',
 	'categories' => [ 'talento-ti' ],
 	'tags'       => [ 'Nearshore', 'Equipos remotos', 'Outsourcing', 'Talento TI' ],
 	'servicio'   => 'staff-augmentation',

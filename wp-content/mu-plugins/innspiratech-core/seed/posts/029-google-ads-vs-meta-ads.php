@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 return [
 	'slug'       => 'google-ads-vs-meta-ads',
 	'title'      => 'Google Ads o Meta Ads: dónde invertir según tu tipo de negocio',
-	'date'       => '2026-10-16 09:00:00',
+	'date'       => '2027-02-01 09:00:00',
 	'categories' => [ 'marketing-digital' ],
 	'tags'       => [ 'Google Ads', 'Meta Ads', 'Publicidad digital', 'Adquisición de clientes' ],
 	'servicio'   => 'marketing-digital',
