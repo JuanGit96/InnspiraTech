@@ -239,6 +239,22 @@ add_filter(
 );
 
 /* -------------------------------------------------------------------------
+ * URL del autor en español: /blog/autor/{slug}/
+ * ---------------------------------------------------------------------- */
+
+// La página del autor sostiene la firma de los artículos, así que su URL
+// también debería estar en español. No se guarda en opciones: hay que fijarla
+// en cada carga.
+add_action(
+	'init',
+	static function (): void {
+		global $wp_rewrite;
+		$wp_rewrite->author_base = 'autor';
+	},
+	5
+);
+
+/* -------------------------------------------------------------------------
  * Sitemap XML nativo (/wp-sitemap.xml)
  * ---------------------------------------------------------------------- */
 

@@ -37,6 +37,27 @@ Toda propuesta que comprometa un resultado lleva las tres partes:
 Si alguna de las tres no se puede escribir, el trabajo se cobra por alcance y no
 por resultado. Es preferible perder un argumento de venta que incumplir.
 
+## En los casos de éxito
+
+Los casos viven en `/casos/` y tienen una regla técnica que respalda la regla
+ética: **un caso sin cifras reales ni autorización se queda en borrador**.
+
+Hoy hay tres cargados:
+
+| Caso | Estado | Por qué |
+|---|---|---|
+| HazloLegal | Publicado | Producto propio: todo lo que afirma se puede verificar entrando |
+| Clínica odontológica | Borrador | Estructura lista; faltan cliente real, cifras y testimonio |
+| Distribuidora | Borrador | Igual |
+
+Para publicar un borrador hay que reemplazar el cliente, las cifras y el
+testimonio por datos reales, conseguir la autorización por escrito y cambiar el
+estado. El campo «Aviso interno» de cada caso recuerda qué falta.
+
+Las cifras de un caso se miden con **la misma fuente de datos del cliente**, no
+con una estimación nuestra. Si el cliente no puede dar el dato de partida, el
+caso no lleva cifras: lleva descripción.
+
 ## En el blog
 
 Los 120 artículos incluyen cifras, rangos y referencias normativas. Antes de cada

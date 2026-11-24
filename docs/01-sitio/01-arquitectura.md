@@ -34,6 +34,8 @@ innspiratech/
 ├── single.php                        ← artículo
 ├── archive-servicio.php              ← listado de servicios
 ├── single-servicio.php               ← ficha de servicio
+├── archive-caso.php, single-caso.php ← casos de éxito
+├── author.php                        ← página del autor (firma de los artículos)
 ├── page.php, page-nosotros.php, page-contacto.php, page-academia.php
 ├── search.php, searchform.php, 404.php, comments.php
 ├── inc/
@@ -42,8 +44,8 @@ innspiratech/
 │   └── customizer.php                ← textos editables de la portada
 ├── template-parts/
 │   ├── home/      hero · resultados · services · ai-band · segments · stack · blog · academy
-│   └── components/ clients · service-card · post-card · plan-card · process · faq ·
-│                   cta · page-hero · newsletter · category-chips · share
+│   └── components/ clients · service-card · post-card · caso-card · plan-card ·
+│                   process · faq · cta · page-hero · newsletter · category-chips · share
 └── src/css/app.css → assets/css/app.css   (compilado con Tailwind)
 ```
 
@@ -72,6 +74,7 @@ por accidente desde el admin.
 | Tipo | Público | URL | Para qué |
 |---|---|---|---|
 | `servicio` | Sí | `/servicios/{slug}/` | Los 12 servicios |
+| `caso` | Sí | `/casos/{slug}/` | Casos de éxito con resultados medidos |
 | `plan` | No | — | Planes con precio que se listan en el archivo de servicios |
 | `cliente` | No | — | Logos de la sección de clientes |
 | `lead` | No (privado) | — | Solicitudes del formulario |
@@ -94,6 +97,8 @@ Todos los campos personalizados usan el prefijo `_it_`. Los más importantes:
 | Campo | Dónde | Para qué |
 |---|---|---|
 | `kpis` | Servicio | Indicadores que mueve. Se ven en la ficha y se publican como `serviceOutput` |
+| `resultados` | Caso | Líneas `Indicador \| Antes \| Después`. Alimentan la ficha, `/llms.txt` y el JSON-LD |
+| `cliente`, `sector`, `reto`, `testimonio` | Caso | Datos del caso. Solo con autorización por escrito |
 | `beneficios`, `entregables` | Servicio | Bloques de la ficha |
 | `precio_desde` | Servicio y plan | Alimenta el `Offer` del JSON-LD |
 | `faq` | Cualquier contenido | Preguntas frecuentes + `FAQPage` |

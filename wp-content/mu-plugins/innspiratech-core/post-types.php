@@ -72,6 +72,43 @@ function it_register_content_types(): void {
 		)
 	);
 
+	// Casos de éxito: la prueba de que el enfoque de resultados funciona.
+	// Es contenido público con URL propia porque posiciona y porque es lo que
+	// revisa un cliente antes de escribir.
+	register_post_type(
+		'caso',
+		array(
+			'labels'        => array(
+				'name'                  => 'Casos de éxito',
+				'singular_name'         => 'Caso de éxito',
+				'menu_name'             => 'Casos de éxito',
+				'all_items'             => 'Todos los casos',
+				'add_new'               => 'Añadir caso',
+				'add_new_item'          => 'Añadir nuevo caso',
+				'edit_item'             => 'Editar caso',
+				'new_item'              => 'Nuevo caso',
+				'view_item'             => 'Ver caso',
+				'view_items'            => 'Ver casos',
+				'search_items'          => 'Buscar casos',
+				'not_found'             => 'No se encontraron casos',
+				'archives'              => 'Casos de éxito',
+				'featured_image'        => 'Imagen del caso',
+				'set_featured_image'    => 'Asignar imagen',
+				'remove_featured_image' => 'Quitar imagen',
+			),
+			'public'        => true,
+			'has_archive'   => 'casos',
+			'rewrite'       => array(
+				'slug'       => 'casos',
+				'with_front' => false,
+			),
+			'menu_icon'     => 'dashicons-awards',
+			'menu_position' => 6,
+			'supports'      => array( 'title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'revisions' ),
+			'show_in_rest'  => true,
+		)
+	);
+
 	register_post_type(
 		'plan',
 		array(

@@ -13,9 +13,9 @@ noviembre de 2026.
 - [ ] Subir los **logos reales de clientes** (hoy hay dos de ejemplo) y confirmar
       que tenemos permiso para mostrarlos.
 - [ ] Revisar los **precios** de los planes y de los servicios.
-- [ ] Poner **nombre y biografía reales** al autor de los artículos. Hoy firman
-      como la marca; una persona identificada posiciona mejor y es lo que citan
-      los modelos de IA.
+- [ ] Añadir **foto del autor** (avatar) y, si existen, sus perfiles públicos en
+      *Usuarios → Perfil*. Los artículos ya los firma Juan Daniel Cárdenas
+      Dávila, CEO y fundador, con página propia en `/blog/autor/`.
 - [ ] Crear y completar el **Google Business Profile**.
 - [ ] Verificar el sitio en **Google Search Console** y pegar el código en
       *Personalizar → SEO*.

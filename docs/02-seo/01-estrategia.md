@@ -51,7 +51,17 @@ datos estructurados.
 Eso forma doce clústeres temáticos: el servicio es la página central y sus diez
 artículos le pasan autoridad.
 
-### 3. Páginas institucionales
+### 3. Caso de éxito (`/casos/{slug}/`)
+
+La prueba. Cada caso cuenta el problema de negocio, qué se construyó y qué pasó
+con el indicador acordado. Posiciona por búsquedas de marca y de sector, pero
+sobre todo **convierte**: es lo que revisa un cliente antes de escribir.
+
+Los resultados medidos se publican en la ficha, en `/llms.txt` y en el JSON-LD,
+así que un modelo de IA puede citarlos cuando alguien pregunte si hemos hecho
+algo parecido.
+
+### 4. Páginas institucionales
 
 `/nosotros/`, `/contacto/`, `/academia/`. No pelean búsquedas competidas, pero
 sostienen la señal de confianza: quién está detrás, cómo trabajamos, cómo se nos
@@ -92,11 +102,11 @@ Por orden de impacto esperado:
 
 1. **Google Business Profile** completo, con reseñas pedidas sistemáticamente.
    Es lo de mayor retorno para captar clientes locales y no cuesta nada.
-2. **Autoría visible.** Los artículos deberían ir firmados por una persona real
-   con biografía y trayectoria, no por «InnspiraTech». Google lo premia en
-   contenido profesional y los modelos de IA citan antes a fuentes con autor.
-3. **Casos reales con cifras**, con permiso del cliente. Es el contenido que más
-   convierte y el que nadie puede copiar.
+2. **Autoría visible.** Hecho: los artículos los firma Juan Daniel Cárdenas
+   Dávila, CEO y fundador, con biografía, cargo y página propia. Falta añadirle
+   foto y perfiles públicos.
+3. **Completar los casos en borrador** con cifras reales y permiso del cliente.
+   La estructura ya está publicada; falta el dato.
 4. **Páginas por ciudad** (`/servicios/desarrollo-de-software-bogota/` y
    similares) si se decide atacar búsquedas locales. Solo para ciudades donde
    realmente se atiende, con contenido propio en cada una.

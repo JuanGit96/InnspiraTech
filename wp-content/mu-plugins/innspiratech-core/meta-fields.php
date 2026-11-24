@@ -73,6 +73,68 @@ function it_meta_boxes_config(): array {
 	);
 
 	return array(
+		'caso'     => array(
+			'it_caso' => array(
+				'title'   => 'Datos del caso',
+				'context' => 'normal',
+				'fields'  => array(
+					'cliente'              => array(
+						'label' => 'Cliente',
+						'type'  => 'text',
+						'help'  => 'Nombre real solo si hay permiso por escrito. Si no, descríbelo sin marca: «Distribuidora de alimentos, 40 empleados».',
+					),
+					'sector'               => array(
+						'label' => 'Sector',
+						'type'  => 'text',
+					),
+					'reto'                 => array(
+						'label' => 'El reto, en una frase',
+						'type'  => 'textarea',
+						'rows'  => 2,
+					),
+					'resultados'           => array(
+						'label' => 'Resultados — uno por línea: Indicador | Antes | Después',
+						'type'  => 'textarea',
+						'rows'  => 5,
+						'help'  => 'Solo cifras reales y verificables. Ej. «Tiempo de respuesta a un lead | 4 horas | 2 minutos».',
+					),
+					'tecnologias'          => array(
+						'label' => 'Tecnologías — una por línea',
+						'type'  => 'textarea',
+						'rows'  => 4,
+					),
+					'duracion'             => array(
+						'label' => 'Duración del proyecto',
+						'type'  => 'text',
+					),
+					'testimonio'           => array(
+						'label' => 'Testimonio del cliente',
+						'type'  => 'textarea',
+						'rows'  => 3,
+						'help'  => 'Textual y con autorización. Nunca redactado por nosotros.',
+					),
+					'testimonio_autor'     => array(
+						'label' => 'Quién lo dice (nombre y cargo)',
+						'type'  => 'text',
+					),
+					'enlace'               => array(
+						'label' => 'Enlace al proyecto',
+						'type'  => 'text',
+					),
+					'servicio_relacionado' => array(
+						'label'     => 'Servicio relacionado',
+						'type'      => 'post',
+						'post_type' => 'servicio',
+					),
+					'aviso_borrador'       => array(
+						'label' => 'Aviso interno',
+						'type'  => 'text',
+						'help'  => 'Visible solo en el admin. Úsalo para recordar qué falta antes de publicar.',
+					),
+				),
+			),
+		),
+
 		'servicio' => array(
 			'it_servicio' => array(
 				'title'   => 'Detalles del servicio',

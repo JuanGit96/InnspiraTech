@@ -41,6 +41,49 @@ function it_schema_output(): void {
 	);
 }
 
+/**
+ * Nodo Person del autor, con credenciales.
+ *
+ * Es la señal de experiencia y autoría que premia Google en contenido
+ * profesional y la que hace que un modelo de lenguaje cite antes esta fuente
+ * que una sin firma.
+ *
+ * @param int    $author_id Usuario autor.
+ * @param string $org_id    Identificador del nodo Organization.
+ */
+function it_schema_person( int $author_id, string $org_id ): array {
+	$person = array(
+		'@type' => 'Person',
+		'@id'   => get_author_posts_url( $author_id ) . '#person',
+		'name'  => get_the_author_meta( 'display_name', $author_id ),
+		'url'   => get_author_posts_url( $author_id ),
+	);
+
+	$cargo = (string) get_user_meta( $author_id, 'it_cargo', true );
+	if ( $cargo ) {
+		$person['jobTitle'] = $cargo;
+	}
+	$bio = (string) get_the_author_meta( 'description', $author_id );
+	if ( $bio ) {
+		$person['description'] = it_plain( $bio );
+	}
+	$person['worksFor'] = array( '@id' => $org_id );
+
+	// Perfiles públicos: refuerzan que la persona existe fuera del sitio.
+	$same_as = array_filter(
+		array(
+			(string) get_the_author_meta( 'user_url', $author_id ),
+			(string) it_opt( 'linkedin' ),
+			(string) it_opt( 'github' ),
+		)
+	);
+	if ( $same_as ) {
+		$person['sameAs'] = array_values( array_unique( $same_as ) );
+	}
+
+	return $person;
+}
+
 function it_schema_graph(): array {
 	$home     = home_url( '/' );
 	$org_id   = $home . '#organization';
@@ -112,7 +155,9 @@ function it_schema_graph(): array {
 	$url = it_canonical_url() ?: it_current_url();
 
 	$types = array( 'WebPage' );
-	if ( is_home() || is_archive() ) {
+	if ( is_author() ) {
+		$types = array( 'ProfilePage' );
+	} elseif ( is_home() || is_archive() ) {
 		$types = array( 'CollectionPage' );
 	} elseif ( is_search() ) {
 		$types = array( 'SearchResultsPage' );
@@ -143,6 +188,10 @@ function it_schema_graph(): array {
 	);
 	if ( is_front_page() ) {
 		$page['about'] = array( '@id' => $org_id );
+	}
+	if ( is_author() ) {
+		$autor                = get_queried_object();
+		$page['mainEntity']   = it_schema_person( (int) $autor->ID, $org_id );
 	}
 
 	$faq_source = 0;
@@ -257,7 +306,7 @@ function it_schema_graph(): array {
 			'dateModified'     => get_post_modified_time( 'c', true, $post ),
 			'author'           => $is_team
 				? array( '@type' => 'Organization', 'name' => $name, 'url' => $home )
-				: array( '@type' => 'Person', 'name' => $name, 'url' => get_author_posts_url( $author_id ) ),
+				: it_schema_person( $author_id, $org_id ),
 			'publisher'        => array( '@id' => $org_id ),
 			'mainEntityOfPage' => array( '@id' => $url . '#webpage' ),
 			'inLanguage'       => $language,
@@ -288,6 +337,53 @@ function it_schema_graph(): array {
 			);
 		}
 		$graph[] = $article;
+	}
+
+	/* ----- Caso de éxito ----- */
+	if ( is_singular( 'caso' ) ) {
+		$post = get_queried_object();
+		$caso = array(
+			'@type'            => 'Article',
+			'@id'              => $url . '#caso',
+			'headline'         => mb_substr( it_plain( get_the_title( $post ) ), 0, 110 ),
+			'description'      => $desc,
+			'datePublished'    => get_post_time( 'c', true, $post ),
+			'dateModified'     => get_post_modified_time( 'c', true, $post ),
+			'author'           => array( '@id' => $org_id ),
+			'publisher'        => array( '@id' => $org_id ),
+			'mainEntityOfPage' => array( '@id' => $url . '#webpage' ),
+			'inLanguage'       => $language,
+			'genre'            => 'Caso de éxito',
+		);
+		if ( has_post_thumbnail( $post ) ) {
+			$caso['image'] = array( '@id' => $url . '#primaryimage' );
+		}
+
+		// El servicio del que este caso es prueba.
+		$servicio_id = (int) it_meta( $post->ID, 'servicio_relacionado' );
+		if ( $servicio_id && 'publish' === get_post_status( $servicio_id ) ) {
+			$caso['about'] = array(
+				'@type'    => 'Service',
+				'@id'      => get_permalink( $servicio_id ) . '#service',
+				'name'     => it_plain( get_the_title( $servicio_id ) ),
+				'url'      => get_permalink( $servicio_id ),
+				'provider' => array( '@id' => $org_id ),
+			);
+		}
+
+		// Los indicadores medidos, que es lo citable del caso.
+		$resultados = it_caso_resultados( $post->ID );
+		if ( $resultados ) {
+			$caso['mentions'] = array_map(
+				static fn( $r ) => array(
+					'@type'       => 'Thing',
+					'name'        => $r['indicador'],
+					'description' => trim( sprintf( 'Antes: %s. Después: %s.', $r['antes'], $r['despues'] ) ),
+				),
+				$resultados
+			);
+		}
+		$graph[] = $caso;
 	}
 
 	/* ----- Service ----- */

@@ -29,10 +29,11 @@ $it_pasos = array(
 	),
 );
 
-$it_cobro = array(
-	array( 'Pago partido', 'Una parte al inicio y otra cuando el indicador llega a lo acordado.' ),
-	array( 'Cuota + extra por objetivo', 'Un fijo mensual de operación y un adicional si superamos la meta.' ),
-	array( 'Porcentaje de la mejora', 'Solo cuando el resultado se puede medir con total claridad y lo controlamos nosotros.' ),
+$it_modelos = array(
+	array( 'check-circle', 'Proyecto cerrado', 'Alcance, precio y fecha definidos antes de empezar. Es la forma más común y la que elige la mayoría.', false ),
+	array( 'refresh', 'Servicio mensual', 'Mantenimiento, soporte, marketing o dirección técnica con una cuota fija y sin sorpresas.', false ),
+	array( 'users', 'Equipo dedicado', 'Perfiles evaluados que se suman a tu equipo el tiempo que necesites, dirigidos por ti.', false ),
+	array( 'trending-up', 'Resultado compartido', 'Parte del pago atada al indicador: pago partido, cuota más extra por objetivo o porcentaje de la mejora. Solo cuando el resultado se mide sin discusión.', true ),
 );
 ?>
 <section class="section bg-white" aria-labelledby="resultados-titulo">
@@ -91,18 +92,23 @@ $it_cobro = array(
 
 			<div class="card flex flex-col p-8 sm:p-10">
 				<p class="eyebrow">Formas de trabajar</p>
-				<h3 class="mt-4 text-2xl font-bold text-indark">Podemos compartir el riesgo contigo</h3>
+				<h3 class="mt-4 text-2xl font-bold text-indark">Eliges cómo nos contratas</h3>
 				<p class="mt-3 text-slate-600">
-					Cuando el indicador es claro y medible, parte de lo que cobramos puede depender de que mejore.
-					Se acuerda caso a caso, por escrito y antes de empezar.
+					La mayoría de proyectos se cierran con alcance, precio y fecha definidos de entrada.
+					Y cuando el indicador es claro y depende de nosotros, podemos ir un paso más allá.
 				</p>
 
 				<ul class="mt-8 space-y-4" role="list">
-					<?php foreach ( $it_cobro as list( $it_titulo, $it_texto ) ) : ?>
-						<li class="flex gap-4 border-t border-slate-100 pt-4 first:border-0 first:pt-0">
-							<?php echo it_icon( 'check-circle', 'size-5 shrink-0 text-emerald-500' ); // phpcs:ignore ?>
+					<?php foreach ( $it_modelos as list( $it_ico, $it_titulo, $it_texto, $it_destacado ) ) : ?>
+						<li class="flex gap-4 rounded-2xl p-4 <?php echo $it_destacado ? 'bg-blue-50 ring-1 ring-blue-100' : ''; ?>">
+							<?php echo it_icon( $it_ico, 'size-5 shrink-0 ' . ( $it_destacado ? 'text-inblue' : 'text-emerald-500' ) ); // phpcs:ignore ?>
 							<div>
-								<p class="font-bold text-indark"><?php echo esc_html( $it_titulo ); ?></p>
+								<p class="font-bold text-indark">
+									<?php echo esc_html( $it_titulo ); ?>
+									<?php if ( $it_destacado ) : ?>
+										<span class="ml-2 rounded-full bg-inblue px-2 py-0.5 align-middle text-[11px] font-semibold tracking-wide text-white uppercase">Opcional</span>
+									<?php endif; ?>
+								</p>
 								<p class="mt-1 text-sm text-slate-600"><?php echo esc_html( $it_texto ); ?></p>
 							</div>
 						</li>

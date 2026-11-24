@@ -21,6 +21,7 @@ mu-plugins/innspiratech-core/seed/
 ├── servicios-1-ia-estrategia.php      ← 7 servicios
 ├── servicios-2-ingenieria.php         ← 5 servicios
 ├── planes-clientes-paginas.php        ← planes, clientes y páginas
+├── casos.php                          ← casos de éxito
 ├── posts/001-*.php … 120-*.php        ← los 120 artículos
 └── img/                               ← portadas 1200×675, logos, favicon
 ```
@@ -39,7 +40,7 @@ ddev wp rewrite flush
 ```
 
 Pasos disponibles: `ajustes`, `terminos`, `servicios`, `planes`, `clientes`,
-`paginas`, `posts`, `enlaces`, `menus`, `icono`.
+`casos`, `paginas`, `posts`, `enlaces`, `menus`, `icono`.
 
 **`--omitir-existentes`** no toca lo que ya existe: es la bandera segura cuando
 ya hay ediciones hechas en el admin.

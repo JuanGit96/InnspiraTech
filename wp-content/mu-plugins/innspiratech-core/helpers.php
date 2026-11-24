@@ -96,6 +96,30 @@ function it_parse_pairs( string $raw ): array {
 /**
  * Convierte texto de varias líneas en un arreglo sin líneas vacías.
  */
+/**
+ * Resultados medidos de un caso de éxito.
+ *
+ * Cada línea del campo tiene el formato «Indicador | Antes | Después».
+ *
+ * @param int $post_id Caso.
+ * @return array<int,array{indicador:string,antes:string,despues:string}>
+ */
+function it_caso_resultados( int $post_id ): array {
+	$out = array();
+	foreach ( it_parse_lines( (string) it_meta( $post_id, 'resultados' ) ) as $linea ) {
+		$partes = array_map( 'trim', explode( '|', $linea ) );
+		if ( '' === ( $partes[0] ?? '' ) ) {
+			continue;
+		}
+		$out[] = array(
+			'indicador' => $partes[0],
+			'antes'     => $partes[1] ?? '',
+			'despues'   => $partes[2] ?? '',
+		);
+	}
+	return $out;
+}
+
 function it_parse_lines( string $raw ): array {
 	return array_values( array_filter( array_map( 'trim', preg_split( '/\r\n|\r|\n/', $raw ) ) ) );
 }

@@ -15,6 +15,7 @@ get_template_part( 'template-parts/components/clients' );
 get_template_part( 'template-parts/home/resultados' );
 get_template_part( 'template-parts/home/services' );
 get_template_part( 'template-parts/home/ai-band' );
+get_template_part( 'template-parts/home/casos' );
 get_template_part( 'template-parts/home/segments' );
 get_template_part( 'template-parts/components/process' );
 get_template_part( 'template-parts/home/stack' );

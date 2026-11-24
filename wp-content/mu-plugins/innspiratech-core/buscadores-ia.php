@@ -164,6 +164,29 @@ function it_llms_txt( bool $completo = false ): string {
 		$out[] = '';
 	}
 
+	// Casos de éxito publicados: la prueba de los resultados, y lo que un modelo
+	// cita cuando alguien pregunta si esta empresa ha hecho algo parecido.
+	$casos = get_posts(
+		array(
+			'post_type'      => 'caso',
+			'posts_per_page' => -1,
+			'orderby'        => 'menu_order',
+			'order'          => 'ASC',
+		)
+	);
+	if ( $casos ) {
+		$out[] = '## Casos de éxito';
+		$out[] = '';
+		foreach ( $casos as $caso ) {
+			$resumen = it_plain( $caso->post_excerpt ?: it_meta( $caso->ID, 'seo_desc' ) );
+			$out[]   = sprintf( '- [%s](%s): %s', it_plain( $caso->post_title ), get_permalink( $caso ), $resumen );
+			foreach ( it_caso_resultados( $caso->ID ) as $r ) {
+				$out[] = sprintf( '  - %s: antes %s, ahora %s', $r['indicador'], $r['antes'], $r['despues'] );
+			}
+		}
+		$out[] = '';
+	}
+
 	// Artículos.
 	$posts = get_posts(
 		array(

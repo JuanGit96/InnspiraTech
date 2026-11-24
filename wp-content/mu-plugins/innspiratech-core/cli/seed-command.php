@@ -67,7 +67,7 @@ class IT_Seed_Command {
 	 * ## OPTIONS
 	 *
 	 * [--solo=<paso>]
-	 * : Ejecuta un solo paso: ajustes, terminos, servicios, planes, clientes, paginas, posts, enlaces, menus o icono.
+	 * : Ejecuta un solo paso: ajustes, terminos, servicios, planes, clientes, casos, paginas, posts, enlaces, menus o icono.
 	 *
 	 * [--omitir-existentes]
 	 * : No modifica contenidos que ya existen (útil para agregar solo lo nuevo sin pisar ediciones).
@@ -100,7 +100,7 @@ class IT_Seed_Command {
 		require_once ABSPATH . 'wp-admin/includes/image.php';
 
 		$only = $assoc_args['solo'] ?? '';
-		foreach ( array( 'ajustes', 'terminos', 'servicios', 'planes', 'clientes', 'paginas', 'posts', 'enlaces', 'menus', 'icono' ) as $step ) {
+		foreach ( array( 'ajustes', 'terminos', 'servicios', 'planes', 'clientes', 'casos', 'paginas', 'posts', 'enlaces', 'menus', 'icono' ) as $step ) {
 			if ( $only && $only !== $step ) {
 				continue;
 			}
@@ -138,17 +138,21 @@ class IT_Seed_Command {
 		$wp_rewrite->set_category_base( 'blog/categoria' );
 		$wp_rewrite->set_tag_base( 'blog/etiqueta' );
 
+		// Los artículos los firma una persona, no la marca: Google valora la autoría
+		// identificada en contenido profesional y los modelos de IA citan antes a
+		// una fuente con autor que a un sitio anónimo.
 		wp_update_user(
 			array(
 				'ID'            => $this->author,
-				'display_name'  => 'Equipo InnspiraTech',
-				'nickname'      => 'Equipo InnspiraTech',
-				'first_name'    => 'Equipo',
-				'last_name'     => 'InnspiraTech',
-				'user_nicename' => 'equipo-innspiratech',
-				'description'   => 'Equipo de ingeniería, inteligencia artificial y estrategia digital de InnspiraTech. Ayudamos a empresas pequeñas, medianas y grandes a construir software, automatizar procesos con IA y crecer en digital.',
+				'display_name'  => 'Juan Daniel Cárdenas Dávila',
+				'nickname'      => 'Juan Daniel Cárdenas Dávila',
+				'first_name'    => 'Juan Daniel',
+				'last_name'     => 'Cárdenas Dávila',
+				'user_nicename' => 'juan-daniel-cardenas',
+				'description'   => 'CEO y fundador de InnspiraTech. Desarrollador de software y consultor en inteligencia artificial aplicada a negocios. Construye plataformas a medida, agentes de IA y servidores MCP para empresas pequeñas, medianas y grandes, con una regla fija: cada proyecto arranca eligiendo el indicador que tiene que mejorar y termina mostrando qué pasó con él.',
 			)
 		);
+		update_user_meta( $this->author, 'it_cargo', 'CEO y fundador de InnspiraTech' );
 
 		// Contenido de ejemplo que crea la instalación de WordPress.
 		$hello  = get_post( 1 );
@@ -219,6 +223,32 @@ class IT_Seed_Command {
 			$id = $this->upsert_post( $item, 'cliente' );
 			if ( ! empty( $item['logo'] ) ) {
 				$attachment = $this->import_image( $item['logo'], 'Logo ' . $item['title'], 'Logo de ' . $item['title'] );
+				if ( $attachment ) {
+					set_post_thumbnail( $id, $attachment );
+				}
+			}
+		}
+	}
+
+	private function step_casos(): void {
+		$archivo = $this->dir . '/casos.php';
+		if ( ! file_exists( $archivo ) ) {
+			return;
+		}
+		foreach ( require $archivo as $item ) {
+			if ( $this->skip( $item['slug'], 'caso' ) ) {
+				continue;
+			}
+
+			if ( ! empty( $item['servicio'] ) ) {
+				$servicio                             = get_page_by_path( $item['servicio'], OBJECT, 'servicio' );
+				$item['meta']['servicio_relacionado'] = $servicio ? (string) $servicio->ID : '';
+			}
+
+			$id = $this->upsert_post( $item, 'caso' );
+
+			if ( ! empty( $item['image']['file'] ) ) {
+				$attachment = $this->import_image( $item['image']['file'], $item['title'], $item['image']['alt'] ?? $item['title'] );
 				if ( $attachment ) {
 					set_post_thumbnail( $id, $attachment );
 				}
@@ -340,6 +370,7 @@ class IT_Seed_Command {
 					'title'    => 'Servicios',
 					'children' => $items,
 				),
+				array( 'type' => 'archive', 'object' => 'caso', 'title' => 'Casos' ),
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'nosotros' ), 'title' => 'Nosotros' ),
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'blog' ), 'title' => 'Blog' ),
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'academia' ), 'title' => 'Academia' ),
@@ -354,6 +385,7 @@ class IT_Seed_Command {
 			'footer_empresa',
 			array(
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'nosotros' ), 'title' => 'Nosotros' ),
+				array( 'type' => 'archive', 'object' => 'caso', 'title' => 'Casos de éxito' ),
 				array( 'type' => 'custom', 'url' => get_post_type_archive_link( 'servicio' ) . '#planes', 'title' => 'Planes y precios' ),
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'blog' ), 'title' => 'Blog' ),
 				array( 'type' => 'post', 'object' => 'page', 'id' => $page( 'academia' ), 'title' => 'Academia' ),

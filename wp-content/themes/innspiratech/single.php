@@ -157,7 +157,13 @@ while ( have_posts() ) :
 							<span class="flex size-14 shrink-0 items-center justify-center rounded-full bg-indark text-lg font-bold text-white" aria-hidden="true"><?php echo esc_html( $it_initials ); ?></span>
 							<div>
 								<p class="text-xs font-bold tracking-widest text-slate-400 uppercase">Escrito por</p>
-								<p class="mt-1 text-lg font-bold text-indark"><?php echo esc_html( $it_name ); ?></p>
+								<p class="mt-1 text-lg font-bold text-indark">
+									<a class="hover:text-inblue" href="<?php echo esc_url( get_author_posts_url( $it_author ) ); ?>" rel="author"><?php echo esc_html( $it_name ); ?></a>
+								</p>
+								<?php $it_cargo = (string) get_user_meta( $it_author, 'it_cargo', true ); ?>
+								<?php if ( $it_cargo ) : ?>
+									<p class="text-sm font-semibold text-inblue"><?php echo esc_html( $it_cargo ); ?></p>
+								<?php endif; ?>
 								<?php if ( get_the_author_meta( 'description', $it_author ) ) : ?>
 									<p class="mt-2 leading-relaxed text-slate-600"><?php echo esc_html( get_the_author_meta( 'description', $it_author ) ); ?></p>
 								<?php endif; ?>
