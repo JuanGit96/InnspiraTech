@@ -1,0 +1,17 @@
+{
+  "name": "innspiratech-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tema WordPress de InnspiraTech (Tailwind CSS v4 compilado)",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/app.css -o ./assets/css/app.css --minify",
+    "dev": "tailwindcss -i ./src/css/app.css -o ./assets/css/app.css --watch",
+    "fonts": "mkdir -p assets/fonts && cp node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2 assets/fonts/"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.2.0",
+    "@tailwindcss/cli": "^4.1.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.1.0"
+  }
+}

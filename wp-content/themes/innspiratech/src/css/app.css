@@ -1,0 +1,213 @@
+/*
+ * InnspiraTech — hoja de entrada de Tailwind CSS v4.
+ *
+ * NO se carga directo en el navegador: se compila a assets/css/app.css
+ *   ddev exec --dir /var/www/html/wp-content/themes/innspiratech npm run build
+ *
+ * Tailwind escanea los .php/.js del tema y genera SOLO las clases usadas
+ * (la versión CDN de la plantilla HTML pesaba ~350 KB de JS y bloqueaba el render).
+ */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@source "../../*.php";
+@source "../../inc";
+@source "../../template-parts";
+@source "../../assets/js";
+
+/* Paleta y tipografía de la marca (antes estaba en tailwind.config del CDN) */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  --color-inblue: #2563eb;
+  --color-indark: #0e172a;
+  --color-inwhite: #ffffff;
+}
+
+/* Inter autoalojada (sin llamadas a Google Fonts: mejor LCP y privacidad) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    @apply bg-slate-50 font-sans text-slate-800;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  :target {
+    scroll-margin-top: 7rem;
+  }
+
+  ::selection {
+    background-color: var(--color-inblue);
+    color: #fff;
+  }
+}
+
+/* ---------- Utilidades propias (se pueden usar con variantes: md:btn, etc.) ---------- */
+
+@utility container-it {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-base font-semibold transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-inblue disabled:opacity-60;
+}
+
+@utility btn-lg {
+  @apply px-8 py-4 text-lg;
+}
+
+@utility btn-primary {
+  @apply btn bg-inblue text-white shadow-lg shadow-blue-600/30 hover:-translate-y-0.5 hover:bg-blue-700;
+}
+
+@utility btn-dark {
+  @apply btn bg-indark text-white shadow-lg shadow-inblue/20 hover:bg-slate-800;
+}
+
+@utility btn-outline {
+  @apply btn border border-slate-200 bg-white text-slate-700 hover:bg-slate-50;
+}
+
+@utility btn-outline-light {
+  @apply btn border border-white/20 bg-white/5 text-white hover:bg-white/10;
+}
+
+@utility eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-sm font-bold text-inblue;
+}
+
+@utility eyebrow-dark {
+  @apply inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1 text-sm font-bold text-blue-300;
+}
+
+@utility section {
+  @apply py-20 lg:py-28;
+}
+
+@utility section-title {
+  @apply text-3xl font-bold tracking-tight text-indark sm:text-4xl;
+}
+
+@utility section-lead {
+  @apply mt-4 text-lg leading-relaxed text-slate-600;
+}
+
+@utility card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300;
+}
+
+@utility field-label {
+  @apply mb-2 block text-sm font-semibold text-slate-700;
+}
+
+@utility field-input {
+  @apply w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-slate-800 transition placeholder:text-slate-400 focus:border-inblue focus:ring-2 focus:ring-inblue/40 focus:outline-none;
+}
+
+/* ---------- Compatibilidad con clases que genera WordPress ---------- */
+
+@layer components {
+  .screen-reader-text {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply not-sr-only fixed top-3 left-3 z-[100] rounded-lg bg-indark px-4 py-2 font-semibold text-white;
+  }
+
+  .aligncenter { @apply mx-auto block; }
+  .alignleft { @apply float-left mr-6 mb-4; }
+  .alignright { @apply float-right ml-6 mb-4; }
+  .wp-caption-text,
+  .wp-element-caption { @apply mt-2 text-center text-sm text-slate-500; }
+
+  /* Menú principal: submenús (se abren con hover/foco en escritorio) */
+  .site-nav .menu-item-has-children {
+    @apply relative;
+  }
+  .site-nav .sub-menu {
+    @apply invisible absolute top-full left-1/2 z-50 mt-3 w-72 -translate-x-1/2 translate-y-2 rounded-2xl border border-slate-100 bg-white p-2 opacity-0 shadow-xl transition-all duration-200;
+  }
+  .site-nav .menu-item-has-children:hover > .sub-menu,
+  .site-nav .menu-item-has-children:focus-within > .sub-menu {
+    @apply visible translate-y-0 opacity-100;
+  }
+  .site-nav .sub-menu::before {
+    content: "";
+    @apply absolute -top-3 left-0 h-3 w-full;
+  }
+  .site-nav .sub-menu a {
+    @apply block rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-inblue;
+  }
+
+  /* Menú móvil */
+  .mobile-nav .sub-menu {
+    @apply mt-1 ml-3 space-y-1 border-l border-slate-200 pl-3;
+  }
+  .mobile-nav .sub-menu a {
+    @apply block py-1.5 text-sm text-slate-600;
+  }
+
+  /* Índice de contenidos del blog */
+  .toc a.is-active {
+    @apply font-semibold text-inblue;
+  }
+
+  /* Paginación (paginate_links) */
+  .pagination .page-numbers {
+    @apply inline-flex size-11 items-center justify-center rounded-lg border border-slate-200 bg-white font-semibold text-slate-600 transition hover:border-inblue hover:text-inblue;
+  }
+  .pagination .page-numbers.current {
+    @apply border-inblue bg-inblue text-white;
+  }
+  .pagination .page-numbers.dots {
+    @apply border-transparent bg-transparent;
+  }
+  .pagination .prev,
+  .pagination .next {
+    @apply w-auto px-4;
+  }
+
+  /* Aparición suave al hacer scroll (solo si hay JS; sin JS todo se ve) */
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Acordeón FAQ nativo */
+  details.faq-item summary::-webkit-details-marker { display: none; }
+  details.faq-item[open] .faq-icon { transform: rotate(45deg); }
+}

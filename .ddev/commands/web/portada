@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+## Description: Genera portadas (1200x675) para el blog con ImageMagick
+## Usage: portada <lista.txt> | portada <archivo.jpg> "<CATEGORÍA>" "<Título>" [color-sin-#]
+## Example: ddev portada portadas.txt   (una línea por portada: archivo.jpg|CATEGORÍA|Título|f472b6)
+
+set -euo pipefail
+
+OUT_DIR=/var/www/html/wp-content/mu-plugins/innspiratech-core/seed/img
+LOGO=/var/www/html/wp-content/themes/innspiratech/assets/img/logo-white.png
+FB=/usr/share/fonts/opentype/urw-base35/NimbusSans-Bold.otf
+FR=/usr/share/fonts/opentype/urw-base35/NimbusSans-Regular.otf
+
+generar() { # archivo categoria titulo color
+  local file="$1" category="$2" title="$3" color="#${4#\#}"
+  local tmp
+  tmp=$(mktemp -d)
+
+  magick -size 1200x675 xc:none -fill "$color" -draw "circle 1080,90 1080,470" -blur 0x130 \
+    -channel A -evaluate multiply 0.5 +channel "$tmp/glow.png"
+
+  magick -size 1200x675 xc:'#0e172a' "$tmp/glow.png" -composite \
+    -fill '#1e293b' -draw 'rectangle 80,548 1120,549' \
+    -font "$FB" -pointsize 28 -fill "$color" -gravity northwest -annotate +80+96 "$category" \
+    \( -size 1000x -background none -font "$FB" -pointsize 66 -fill white -interline-spacing 8 caption:"$title" \) \
+    -gravity northwest -geometry +80+150 -composite \
+    \( "$LOGO" -resize x44 \) -gravity southwest -geometry +80+48 -composite \
+    -font "$FR" -pointsize 26 -fill '#94a3b8' -gravity southeast -annotate +80+56 'innspiratech.com/blog' \
+    -strip -quality 84 "$OUT_DIR/$file"
+
+  rm -rf "$tmp"
+  echo "  ✓ $file"
+}
+
+# Modo lista: evita problemas de comillas y caracteres especiales al pasar argumentos.
+if [ $# -eq 1 ] && [[ "$1" == *.txt ]]; then
+  cd /var/www/html
+  while IFS='|' read -r file category title color || [ -n "${file:-}" ]; do
+    [ -z "${file:-}" ] && continue
+    generar "$file" "$category" "$title" "${color:-3b82f6}"
+  done < "$1"
+  exit 0
+fi
+
+if [ $# -lt 3 ]; then
+  echo 'Uso: ddev portada <lista.txt>  |  ddev portada <archivo.jpg> "<CATEGORÍA>" "<Título>" [color-sin-#]'
+  exit 1
+fi
+
+generar "$1" "$2" "$3" "${4:-3b82f6}"

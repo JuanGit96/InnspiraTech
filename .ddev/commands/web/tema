@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+## Description: Compila el CSS del tema InnspiraTech con Tailwind (build, dev o install)
+## Usage: tema [build|dev|install]
+## Example: "ddev tema build" (una vez, minificado) o "ddev tema dev" (vigila cambios)
+
+cd /var/www/html/wp-content/themes/innspiratech || exit 1
+
+case "${1:-build}" in
+  install)
+    npm install && npm run fonts
+    ;;
+  dev)
+    npm run dev
+    ;;
+  build)
+    npm run build
+    ;;
+  *)
+    echo "Uso: ddev tema [build|dev|install]"
+    exit 1
+    ;;
+esac

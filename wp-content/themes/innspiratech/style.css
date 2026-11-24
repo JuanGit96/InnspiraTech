@@ -1,0 +1,19 @@
+/*
+Theme Name:        InnspiraTech
+Theme URI:         https://innspiratech.com
+Author:            InnspiraTech
+Author URI:        https://innspiratech.com
+Description:       Tema a medida para InnspiraTech: consultora de desarrollo de software, inteligencia artificial y transformación digital. Convertido desde una plantilla HTML con Tailwind CSS v4 compilado, SEO técnico y foco en rendimiento.
+Version:           1.0.0
+Requires at least: 6.5
+Tested up to:      7.1
+Requires PHP:      8.1
+License:           Proprietary
+Text Domain:       innspiratech
+*/
+
+/*
+ * Este archivo solo identifica el tema ante WordPress.
+ * Los estilos reales se compilan con Tailwind desde src/css/app.css
+ * hacia assets/css/app.css (ver package.json: `ddev npm run build`).
+ */

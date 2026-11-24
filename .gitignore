@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------------------
+# Repositorio del proyecto InnspiraTech.
+#
+# Se versiona lo que es NUESTRO: el tema, el mu-plugin (incluido el contenido
+# semilla y las portadas del blog), la configuración de DDEV y la documentación.
+#
+# NO se versiona el núcleo de WordPress (se descarga con `ddev wp core download`),
+# ni los plugins de terceros, ni las subidas del admin, ni la base de datos.
+# ---------------------------------------------------------------------------
+
+# Núcleo de WordPress
+/wp-admin/
+/wp-includes/
+/wp-*.php
+!/wp-content/
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# Configuración con credenciales
+/wp-config.php
+/wp-config-ddev.php
+/.ddev/.dbimageBuild/
+/.ddev/.ddev-docker-*
+/.ddev/.global_commands/
+/.ddev/.homeadditions/
+/.ddev/db_snapshots/
+/.ddev/providers/
+/.ddev/traefik/
+/.ddev/**/*.yaml.bak
+
+# Contenido generado o de terceros
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/plugins/
+!/wp-content/plugins/index.php
+/wp-content/themes/*
+!/wp-content/themes/innspiratech/
+/wp-content/mu-plugins/zz-*.php
+
+# Dependencias y compilados del tema
+node_modules/
+/wp-content/themes/innspiratech/.vite/
+*.log
+
+# Respaldos y temporales
+/backups/
+*.sql
+*.sql.gz
+.DS_Store
+._*
+Thumbs.db
